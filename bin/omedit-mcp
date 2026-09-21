@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+"""Lifecycle for official OMEdit; no host sockets or network exposure."""
+import json
+import os
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+NAME = 'openmodelica-ai-omedit'
+IMAGE = 'sha256:3fee76be6c5a1a07ca232cc5584ea2e88371e3b45e571eecde8047931f4ffb70'
+HEALTH = "import urllib.request; print(urllib.request.urlopen('http://127.0.0.1:3000/health',timeout=3).read().decode())"
+action = sys.argv[1] if len(sys.argv) > 1 else 'status'
+if action == 'health':
+    sys.exit(subprocess.run(['docker','exec',NAME,'python3','-c',HEALTH]).returncode)
+elif action == 'status':
+    sys.exit(subprocess.run(['docker','inspect',NAME,'--format','{{.State.Status}} network={{.HostConfig.NetworkMode}} ports={{json .HostConfig.PortBindings}}']).returncode)
+elif action == 'stop':
+    sys.exit(subprocess.run(['docker','stop','--timeout','10',NAME]).returncode)
+elif action == 'logs':
+    sys.exit(subprocess.run(['docker','logs',NAME]).returncode)
+elif action == 'serve':
+    os.execv(str(ROOT / '.venv/bin/python'), [str(ROOT / '.venv/bin/python'),str(ROOT / 'scripts/omedit_bridge.py')])
+elif action != 'start':
+    sys.exit('usage: omedit-mcp start|stop|status|health|logs|serve')
+state = subprocess.run(['docker','inspect',NAME,'--format','{{.State.Running}}'], capture_output=True,text=True)
+if state.returncode == 0:
+    if state.stdout.strip() != 'true':
+        subprocess.run(['docker','start',NAME],check=True,stdout=subprocess.DEVNULL)
+else:
+    for folder in ['artifacts/omedit','runtime/omedit-tmp','runtime/omedit-home/.openmodelica']:
+        (ROOT/folder).mkdir(parents=True,exist_ok=True)
+    command = ['docker','run','-d','--init','--name',NAME,'--label','org.nathan.project=openmodelica-ai',
+               '--network','none','--cap-drop','ALL','--security-opt','no-new-privileges',
+               '--user',f'{os.getuid()}:{os.getgid()}','--cpus','2','--memory','3g','--pids-limit','256',
+               '--read-only','--tmpfs','/tmp:rw,nosuid,size=256m,mode=1777',
+               '-e',f'HOME={ROOT}/runtime/omedit-home','-e',f'TMPDIR={ROOT}/runtime/omedit-tmp',
+               '--mount',f'type=bind,src={ROOT},dst={ROOT},readonly',
+               '--mount',f'type=bind,src={ROOT}/runtime,dst={ROOT}/runtime',
+               '--mount',f'type=bind,src={ROOT}/artifacts,dst={ROOT}/artifacts',
+               '--mount',f'type=bind,src={ROOT}/repos,dst={ROOT}/repos,readonly',
+               '--mount',f'type=bind,src={ROOT}/runtime/home/.openmodelica,dst={ROOT}/runtime/omedit-home/.openmodelica,readonly',
+               '-w',str(ROOT/'artifacts/omedit'),IMAGE]
+    subprocess.run(command,check=True,stdout=subprocess.DEVNULL)
+deadline = time.monotonic() + 60
+while time.monotonic() < deadline:
+    response = subprocess.run(['docker','exec',NAME,'python3','-c',HEALTH],capture_output=True,text=True,timeout=7)
+    if response.returncode == 0 and response.stdout.strip() == 'OK':
+        print('OMEdit MCP OK; container network=none, no published ports')
+        break
+    time.sleep(1)
+else:
+    subprocess.run(['docker','logs',NAME])
+    sys.exit('OMEdit health check failed')

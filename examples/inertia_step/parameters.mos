@@ -1,0 +1,10 @@
+loadModel(Modelica, {"4.1.0"}, requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(InertiaStep);
+getErrorString();
+simulate(InertiaStep, stopTime=1, numberOfIntervals=1000, tolerance=1e-8, outputFormat="csv", fileNamePrefix="baseline");
+getErrorString();
+simulate(InertiaStep, stopTime=1, numberOfIntervals=1000, tolerance=1e-8, outputFormat="csv", fileNamePrefix="result", simflags="-override=J=0.4,tau=3");
+getErrorString();

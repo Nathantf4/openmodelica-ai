@@ -1,0 +1,8 @@
+loadModel(Modelica, {"4.1.0"}, requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(BouncingBall);
+getErrorString();
+simulate(BouncingBall, stopTime=1, numberOfIntervals=1000, tolerance=1e-8, method="dassl", outputFormat="csv", fileNamePrefix="result");
+getErrorString();

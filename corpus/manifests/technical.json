@@ -1,0 +1,946 @@
+{
+  "schema": "technical-corpus/v1",
+  "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+  "mls_version": "3.7",
+  "mcp_version": "2025-11-25",
+  "openmodelica_version": "1.27.1",
+  "sources": [
+    {
+      "source_id": "A1-release-index",
+      "url": "https://specification.modelica.org/",
+      "raw_path": "corpus/raw/A/MLS-release-index.html",
+      "source_sha256": "0cf71d070be4870943ad0af774a66077c1f875a0cca4330795743d57e3911633",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 4 Classes, Predefined Types, and Declarations \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/class-predefined-types-and-declarations.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-class-predefined-types-and-declarations.html",
+      "source_sha256": "0763840f0f33fef53ca9010ea1e8f53d605987f733a1a93f931f3a5484cb6966",
+      "extracted_path": "corpus/raw/A/MLS-3.7-class-predefined-types-and-declarations.html.txt",
+      "extracted_sha256": "d6397f476593ada29c570b50aa2aa80f5a64370931447726d916f6dd90fa562e",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "class-predefined-types-and-declarations"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 5 Scoping, Name Lookup, and Flattening \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/scoping-name-lookup-and-flattening.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-scoping-name-lookup-and-flattening.html",
+      "source_sha256": "04e6b36cd401fe69ba96a572125eb59b39d3342248dae0ac59e958468713034e",
+      "extracted_path": "corpus/raw/A/MLS-3.7-scoping-name-lookup-and-flattening.html.txt",
+      "extracted_sha256": "17c28882a61bdd6c177d1a1971723f962d833e3f606c37b8c55060e30212c09c",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "scoping-name-lookup-and-flattening"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 3 Operators and Expressions \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/operators-and-expressions.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-operators-and-expressions.html",
+      "source_sha256": "b1e93a44c0ea33e507a84838201de0944d7c86a1648825f5073fc6e083771334",
+      "extracted_path": "corpus/raw/A/MLS-3.7-operators-and-expressions.html.txt",
+      "extracted_sha256": "6caa96c52e66a6e0ac096d8897f9802882ea8cb1d95ab2e6262a9916217ebd47",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "operators-and-expressions"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 8 Equations \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/equations.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-equations.html",
+      "source_sha256": "e8e17a850cc940e107a6f4155f959dbf599b8e3eb88619530532e842da1fa994",
+      "extracted_path": "corpus/raw/A/MLS-3.7-equations.html.txt",
+      "extracted_sha256": "e358d29d69bfeeceb4a4e664d474d25587bc1b4ff1e3bedbceb9bfb58c80ccb1",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "equations"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 9 Connectors and Connections \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/connectors-and-connections.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-connectors-and-connections.html",
+      "source_sha256": "a98e1c10ebe09d88f65fbfca17830fb5a2844c586ef2702b120d101f9afa8914",
+      "extracted_path": "corpus/raw/A/MLS-3.7-connectors-and-connections.html.txt",
+      "extracted_sha256": "754b95d306147d4615e26ccce2e967e2e0cc97186ebf9ae830f2f392d322d68c",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "connectors-and-connections"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 11 Statements and Algorithm Sections \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/statements-and-algorithm-sections.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-statements-and-algorithm-sections.html",
+      "source_sha256": "f35894c0ec7441f9d2f4406e9ba16f8dc2e561e08e47947c274e2fb0d0df1e21",
+      "extracted_path": "corpus/raw/A/MLS-3.7-statements-and-algorithm-sections.html.txt",
+      "extracted_sha256": "0e0a133d890d054bd22dc78a36241ada13907e354cb578ab2d883fa1fb42cc74",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "statements-and-algorithm-sections"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 13 Packages \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/packages.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-packages.html",
+      "source_sha256": "4f047b25dc77a9ea45fa0fc14139055358045b772d8aa6ddd7f71e901032a2eb",
+      "extracted_path": "corpus/raw/A/MLS-3.7-packages.html.txt",
+      "extracted_sha256": "e503cd3500fd4f5f55a2614d42f27d163e1c7796d85bd11dbddaced0e5194bb6",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "packages"
+    },
+    {
+      "source_id": "A1",
+      "title": "Chapter 18 Annotations \u2023 Modelica\u00ae Language Specification version 3.7",
+      "url": "https://specification.modelica.org/maint/3.7/annotations.html",
+      "raw_path": "corpus/raw/A/MLS-3.7-annotations.html",
+      "source_sha256": "93f504162128112604914c602c8fcd6756cd270c98c6e3e338d4826365bf188d",
+      "extracted_path": "corpus/raw/A/MLS-3.7-annotations.html.txt",
+      "extracted_sha256": "be4b978244c3810ad5092d5cdeab7495a2cb2f9c6505479abc276709288d1f66",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
+      "version": "3.7",
+      "chapter": "annotations"
+    },
+    {
+      "source_id": "C1",
+      "title": "C1: OpenModelica doc/UsersGuide/source/introduction.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/introduction.rst",
+      "raw_path": "corpus/raw/C/C1-introduction.rst",
+      "source_sha256": "a196aa967fa3a8841a24887c58e943a8d6af6ed5dd106f6806cfe7505bc480b6",
+      "extracted_path": "corpus/raw/C/C1-introduction.rst.txt",
+      "extracted_sha256": "a196aa967fa3a8841a24887c58e943a8d6af6ed5dd106f6806cfe7505bc480b6",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C1",
+      "title": "C1: OpenModelica doc/UsersGuide/source/compiler.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/compiler.rst",
+      "raw_path": "corpus/raw/C/C1-compiler.rst",
+      "source_sha256": "7fd99a9ae9988e1e23457da2ba27185a55e2ad2a805af4752bd75b9cec0707fd",
+      "extracted_path": "corpus/raw/C/C1-compiler.rst.txt",
+      "extracted_sha256": "7fd99a9ae9988e1e23457da2ba27185a55e2ad2a805af4752bd75b9cec0707fd",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C1",
+      "title": "C1: OpenModelica doc/UsersGuide/source/solving.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/solving.rst",
+      "raw_path": "corpus/raw/C/C1-solving.rst",
+      "source_sha256": "e1670741347a35b5b0f79be7db93609c228b85081ab30aa94384ae43ddaab3ff",
+      "extracted_path": "corpus/raw/C/C1-solving.rst.txt",
+      "extracted_sha256": "e1670741347a35b5b0f79be7db93609c228b85081ab30aa94384ae43ddaab3ff",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C1",
+      "title": "C1: OpenModelica doc/UsersGuide/source/fmitlm.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/fmitlm.rst",
+      "raw_path": "corpus/raw/C/C1-fmitlm.rst",
+      "source_sha256": "bb3f57854b6659687277453cbd296858b6659a62bf46d52eaffe8306d0e98550",
+      "extracted_path": "corpus/raw/C/C1-fmitlm.rst.txt",
+      "extracted_sha256": "bb3f57854b6659687277453cbd296858b6659a62bf46d52eaffe8306d0e98550",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C1",
+      "title": "C1: OpenModelica doc/UsersGuide/source/omedit.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/omedit.rst",
+      "raw_path": "corpus/raw/C/C1-omedit.rst",
+      "source_sha256": "097d32dbbf68698eea150ccaf1d685dd9a58b1275dae02ba2fe44e171e9d7e9d",
+      "extracted_path": "corpus/raw/C/C1-omedit.rst.txt",
+      "extracted_sha256": "097d32dbbf68698eea150ccaf1d685dd9a58b1275dae02ba2fe44e171e9d7e9d",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C2",
+      "title": "C2: OpenModelica doc/UsersGuide/source/ompython.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/ompython.rst",
+      "raw_path": "corpus/raw/C/C2-ompython.rst",
+      "source_sha256": "565c4a7625593ada4ce8ce8bf34470a355edb8066b382620221ffc341d26ae75",
+      "extracted_path": "corpus/raw/C/C2-ompython.rst.txt",
+      "extracted_sha256": "565c4a7625593ada4ce8ce8bf34470a355edb8066b382620221ffc341d26ae75",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica doc/UsersGuide/source/scripting_api.rst",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/scripting_api.rst",
+      "raw_path": "corpus/raw/C/C3-scripting_api.rst",
+      "source_sha256": "20e85494c3529448f4498479c4ea18fdaa638728bd9f4c4ad82c4dde2fd243ad",
+      "extracted_path": "corpus/raw/C/C3-scripting_api.rst.txt",
+      "extracted_sha256": "20e85494c3529448f4498479c4ea18fdaa638728bd9f4c4ad82c4dde2fd243ad",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-loadModel.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-loadModel.mo.txt",
+      "extracted_sha256": "51eb96ef4f7080766a9335fb25a5d2f1653510c5f158e11b9eab3a7309582060",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-loadFile.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-loadFile.mo.txt",
+      "extracted_sha256": "5697ea2cbce5e401d091a80059d30ca488f5e9edeb2aa34e13dd96de7a413468",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-checkModel.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-checkModel.mo.txt",
+      "extracted_sha256": "fcce47d9e527661f3ec01e0f5d83f2e86db153d8ff16efdc79b5cb3de4545e0d",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-simulate.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-simulate.mo.txt",
+      "extracted_sha256": "d6af9ec51df162ca53913fc7741e30048386528d839a0198c4f3dd34f37be10a",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getErrorString.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getErrorString.mo.txt",
+      "extracted_sha256": "925fa090072622c7e7c697ceff19c9ca5751f241f1135151c022d4e3c6336780",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getClassNames.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getClassNames.mo.txt",
+      "extracted_sha256": "33a83f093f0d58074a2bee0f4990e5d4d7710f2bd58acbb8a79716876f7e2036",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getClassInformation.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getClassInformation.mo.txt",
+      "extracted_sha256": "1de7cb7b68bcd727ff4a3d97f72a74be496032c259ddc82623e80125db1667ef",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getComponents.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getComponents.mo.txt",
+      "extracted_sha256": "5b490fe4b684591ee7a72fb73e31313648fe47d829591a057893254d14798fb8",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getInheritedClasses.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getInheritedClasses.mo.txt",
+      "extracted_sha256": "6f512f6b3e3ef1075333b248e2400ec200c006764137421314a1adee6d2891fe",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-getDocumentationAnnotation.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-getDocumentationAnnotation.mo.txt",
+      "extracted_sha256": "110cf33ddb46fc8a69847715597c545a18bd1d4b29a27b7b7c0df4549d65b8a7",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C3",
+      "title": "C3: OpenModelica OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMCompiler/Compiler/FrontEnd/ModelicaBuiltin.mo",
+      "raw_path": "corpus/raw/C/C3-api-existClass.mo",
+      "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
+      "extracted_path": "corpus/raw/C/C3-api-existClass.mo.txt",
+      "extracted_sha256": "d2b2752f9bca855ea38bd7914b5072fcdfc79e7a32f34276ab64604866d5a469",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C4",
+      "title": "C4: OpenModelica doc/bibliography/openmodelica.bib",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/bibliography/openmodelica.bib",
+      "raw_path": "corpus/raw/C/C4-openmodelica.bib",
+      "source_sha256": "52cf463edf56e2e59e5df7059905fc145bf6340ce802764ad88e947d25b39a9f",
+      "extracted_path": "corpus/raw/C/C4-openmodelica.bib.txt",
+      "extracted_sha256": "52cf463edf56e2e59e5df7059905fc145bf6340ce802764ad88e947d25b39a9f",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C5",
+      "title": "OpenModelica v1.27.0 release",
+      "url": "https://github.com/OpenModelica/OpenModelica/releases/tag/v1.27.0",
+      "raw_path": "corpus/raw/C/C5-release-v1.27.0.json",
+      "source_sha256": "949fbbab963bd74e51137ec4bf4ceb96bf39f28e900a0e2de88ff645028fc399",
+      "extracted_path": "corpus/raw/C/C5-release-v1.27.0.json.txt",
+      "extracted_sha256": "39099ab56e1195fed452774c2c6306935a2070c17a7742db02277bea3291cb62",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Public upstream release notes; local reference copy.",
+      "version": "1.27.0"
+    },
+    {
+      "source_id": "C5",
+      "title": "OpenModelica v1.27.1 release",
+      "url": "https://github.com/OpenModelica/OpenModelica/releases/tag/v1.27.1",
+      "raw_path": "corpus/raw/C/C5-release-v1.27.1.json",
+      "source_sha256": "2dd3f4632f6413ac95b18eed4254741ac989bcf3f65c4774454d1f55b84e02a8",
+      "extracted_path": "corpus/raw/C/C5-release-v1.27.1.json.txt",
+      "extracted_sha256": "bd9cca5bfdd6faee553395a887c7f68abca1b2f967ada7268c5d5455b9710205",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Public upstream release notes; local reference copy.",
+      "version": "1.27.1"
+    },
+    {
+      "source_id": "C7",
+      "title": "C7: OpenModelica OMEdit/OMEditLIB/MCP/README.md",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/OMEdit/OMEditLIB/MCP/README.md",
+      "raw_path": "corpus/raw/C/C7-omedit-mcp-readme.md",
+      "source_sha256": "0e814e70a991e1b2fc9f3ff488a133ee87cc475218c76408c52ea793a892133b",
+      "extracted_path": "corpus/raw/C/C7-omedit-mcp-readme.md.txt",
+      "extracted_sha256": "0e814e70a991e1b2fc9f3ff488a133ee87cc475218c76408c52ea793a892133b",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "C7",
+      "title": "Implement MCP server for OMEdit interaction with chatbots",
+      "url": "https://github.com/OpenModelica/OpenModelica/issues/15385",
+      "raw_path": "corpus/raw/C/C7-issue-15385.json",
+      "source_sha256": "1491abc954d225e1e9d2f802a5e39d4e884113b273131785f9dc656e8d9a1fd1",
+      "extracted_path": "corpus/raw/C/C7-issue-15385.json.txt",
+      "extracted_sha256": "87296ed97c7021c524f643090f11b2ce81353e927e7d1e3e9fa7c8ec42e0faf9",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Public issue; local reference. Point-in-time issue text, not release authority."
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/architecture/index.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/architecture/index.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-architecture-index.mdx",
+      "source_sha256": "95c1e8ff98fc651b13ed9b38e7f8fde3c623a9f639b843c35f49c8936967e288",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-architecture-index.mdx.txt",
+      "extracted_sha256": "95c1e8ff98fc651b13ed9b38e7f8fde3c623a9f639b843c35f49c8936967e288",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/authorization.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/authorization.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-authorization.mdx",
+      "source_sha256": "8361d0dd9d7072d9d93cace82afe4d1d562d0a6e456f48f2bcf0ef3a922907c6",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-authorization.mdx.txt",
+      "extracted_sha256": "8361d0dd9d7072d9d93cace82afe4d1d562d0a6e456f48f2bcf0ef3a922907c6",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/index.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/index.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-index.mdx",
+      "source_sha256": "bd275064995d6e36dbb51c059be97e81c3eb7ceafc932e0276a7fc0a84c30fa4",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-index.mdx.txt",
+      "extracted_sha256": "bd275064995d6e36dbb51c059be97e81c3eb7ceafc932e0276a7fc0a84c30fa4",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/lifecycle.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/lifecycle.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-lifecycle.mdx",
+      "source_sha256": "45a6e8b7fb8c96e7b9ba1b0a3c727e8451c1e55bf56bb62f3ab63fddc365b919",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-lifecycle.mdx.txt",
+      "extracted_sha256": "45a6e8b7fb8c96e7b9ba1b0a3c727e8451c1e55bf56bb62f3ab63fddc365b919",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/transports.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/transports.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-transports.mdx",
+      "source_sha256": "a247fdbb3cc25c805ef43124db18d9b60a56669b3e65bd163dffb76f4129dfc0",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-transports.mdx.txt",
+      "extracted_sha256": "a247fdbb3cc25c805ef43124db18d9b60a56669b3e65bd163dffb76f4129dfc0",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/utilities/cancellation.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/utilities/cancellation.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-cancellation.mdx",
+      "source_sha256": "9bd2a4422cf22b003621b0da0b812cb7b85c00e2feee1e6847a9d2f4837343d4",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-cancellation.mdx.txt",
+      "extracted_sha256": "9bd2a4422cf22b003621b0da0b812cb7b85c00e2feee1e6847a9d2f4837343d4",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/utilities/ping.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/utilities/ping.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-ping.mdx",
+      "source_sha256": "f21b707244cd43bf4a562c2016eb91725db28c6f17eb3b279d1a8dffd415a463",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-ping.mdx.txt",
+      "extracted_sha256": "f21b707244cd43bf4a562c2016eb91725db28c6f17eb3b279d1a8dffd415a463",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/utilities/progress.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/utilities/progress.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-progress.mdx",
+      "source_sha256": "35d27ca9ad8ee9e029ab84afc751de208f7732c97c7a5d792abbcc237ab72528",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-progress.mdx.txt",
+      "extracted_sha256": "35d27ca9ad8ee9e029ab84afc751de208f7732c97c7a5d792abbcc237ab72528",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/basic/utilities/tasks.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/basic/utilities/tasks.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-tasks.mdx",
+      "source_sha256": "bef1bef9f939e09eed8f1928da4d3b36924f4a43b72ffc47a5c1e673f1c1a23b",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-tasks.mdx.txt",
+      "extracted_sha256": "bef1bef9f939e09eed8f1928da4d3b36924f4a43b72ffc47a5c1e673f1c1a23b",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/changelog.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/changelog.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-changelog.mdx",
+      "source_sha256": "d21083d5ada5706026550ed13ec2ccfb0a8b3b271918698c33d18d2c41d942ae",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-changelog.mdx.txt",
+      "extracted_sha256": "d21083d5ada5706026550ed13ec2ccfb0a8b3b271918698c33d18d2c41d942ae",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/client/elicitation.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/client/elicitation.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-client-elicitation.mdx",
+      "source_sha256": "a60c4955e9fbacd5b21c856f7a8f1ccdaad91dc6c600347762482fd2750e6a3f",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-elicitation.mdx.txt",
+      "extracted_sha256": "a60c4955e9fbacd5b21c856f7a8f1ccdaad91dc6c600347762482fd2750e6a3f",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/client/roots.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/client/roots.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-client-roots.mdx",
+      "source_sha256": "5ac98aa829b9c719ed2600fd5cd0d764833054d97ce7221d1660ccbcf06a5478",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-roots.mdx.txt",
+      "extracted_sha256": "5ac98aa829b9c719ed2600fd5cd0d764833054d97ce7221d1660ccbcf06a5478",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/client/sampling.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/client/sampling.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-client-sampling.mdx",
+      "source_sha256": "4983c3deda69d135e7e756f9e51d62fb1174b0ad6176eed5a40d0f12bfaf0d15",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-sampling.mdx.txt",
+      "extracted_sha256": "4983c3deda69d135e7e756f9e51d62fb1174b0ad6176eed5a40d0f12bfaf0d15",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/index.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/index.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-index.mdx",
+      "source_sha256": "cbed0305607471945be08e0fcda8f8630d409dddf9181da972c00866a2a7703a",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-index.mdx.txt",
+      "extracted_sha256": "cbed0305607471945be08e0fcda8f8630d409dddf9181da972c00866a2a7703a",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/schema.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/schema.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-schema.mdx",
+      "source_sha256": "03c66be1ec2c04c7d62d4443f47f0b9ac6213656168a4316b169fc96aaf9ec15",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-schema.mdx.txt",
+      "extracted_sha256": "03c66be1ec2c04c7d62d4443f47f0b9ac6213656168a4316b169fc96aaf9ec15",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/index.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/index.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-index.mdx",
+      "source_sha256": "7a5a4c6ec4f2ae9fac3145b9e7c5935d3507ec6b8288f0941b45408075deda6f",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-index.mdx.txt",
+      "extracted_sha256": "7a5a4c6ec4f2ae9fac3145b9e7c5935d3507ec6b8288f0941b45408075deda6f",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/prompts.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/prompts.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-prompts.mdx",
+      "source_sha256": "5c4a5adefade5d9ecaa1446278a46d48c11fbfb4217bcd81c8fc004928a4abe1",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-prompts.mdx.txt",
+      "extracted_sha256": "5c4a5adefade5d9ecaa1446278a46d48c11fbfb4217bcd81c8fc004928a4abe1",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/resources.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/resources.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-resources.mdx",
+      "source_sha256": "9c1aa45ee31c1e0f097c5d1f6316e796f0ee2d393fbc960be400e0f77cf82843",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-resources.mdx.txt",
+      "extracted_sha256": "9c1aa45ee31c1e0f097c5d1f6316e796f0ee2d393fbc960be400e0f77cf82843",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/tools.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/tools.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-tools.mdx",
+      "source_sha256": "39e56ad4f3d1ff1cb28ee62283e02947cd97db8aa6190782d629f4562a0f354c",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-tools.mdx.txt",
+      "extracted_sha256": "39e56ad4f3d1ff1cb28ee62283e02947cd97db8aa6190782d629f4562a0f354c",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/utilities/completion.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/utilities/completion.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-completion.mdx",
+      "source_sha256": "ea42d006ba3b3ab8deceb5ae22be17f79e40b26a207947459560018f91eb42e9",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-completion.mdx.txt",
+      "extracted_sha256": "ea42d006ba3b3ab8deceb5ae22be17f79e40b26a207947459560018f91eb42e9",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/utilities/logging.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/utilities/logging.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-logging.mdx",
+      "source_sha256": "37cfde22e75d2444c9d796c2df636b96c1c9d486e64b109e38169f2d7f2cf82a",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-logging.mdx.txt",
+      "extracted_sha256": "37cfde22e75d2444c9d796c2df636b96c1c9d486e64b109e38169f2d7f2cf82a",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C6",
+      "title": "C6: modelcontextprotocol docs/specification/2025-11-25/server/utilities/pagination.mdx",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol/blob/24efd6e7cbd7a074e6b3b781eb370891df40afad/docs/specification/2025-11-25/server/utilities/pagination.mdx",
+      "raw_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-pagination.mdx",
+      "source_sha256": "81a715102e8da34afd1473ef457dedab233b2d8e4af00447ae1c27c2b854c14b",
+      "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-pagination.mdx.txt",
+      "extracted_sha256": "81a715102e8da34afd1473ef457dedab233b2d8e4af00447ae1c27c2b854c14b",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
+    },
+    {
+      "source_id": "C8",
+      "title": "Modex public product overview (not full docs)",
+      "url": "https://modexai.io/",
+      "raw_path": "corpus/raw/C/C8-modex.html",
+      "source_sha256": "7c285e74052181f99931e3464f8f3da0136fdd69384265fa7c693adef750323b",
+      "extracted_path": "corpus/raw/C/C8-modex.html.txt",
+      "extracted_sha256": "f5811ef71a4583d272e54c106e07e9ea8e83652fc26f7c977c51a6e5e4e02fd9",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Public website excerpt for local reference; rights unspecified. No claim of full documentation ingestion."
+    },
+    {
+      "source_id": "C2",
+      "title": "Local tested OMPython compiler diagnostics adapter",
+      "url": "https://github.com/OpenModelica/OpenModelica/blob/4a7248c1ab64f4205eb4222b6b009bbf2b0df383/doc/UsersGuide/source/ompython.rst",
+      "raw_path": "corpus/raw/C/C2-compiler-diagnostics-adapter.txt",
+      "source_sha256": "ad1892d9ad169fe517be7bece7e981b4e6a0bbf5d04380974f80cd16c3c1dabb",
+      "extracted_path": "corpus/raw/C/C2-compiler-diagnostics-adapter.txt.txt",
+      "extracted_sha256": "ad1892d9ad169fe517be7bece7e981b4e6a0bbf5d04380974f80cd16c3c1dabb",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "rights_note": "Locally authored integration guidance; upstream API references are pinned separately in C2/C3.",
+      "authored_adapter": true,
+      "role": "compiler-diagnostics",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
+    },
+    {
+      "source_id": "A2",
+      "url": "https://github.com/modelica/ModelicaStandardLibrary/tree/8ae3d35c24e519cb2996cab20f3b13daf2b0c50a",
+      "commit": "8ae3d35c24e519cb2996cab20f3b13daf2b0c50a",
+      "raw_path": "corpus/raw/A/Modelica-reflection.json",
+      "source_sha256": "ead9f6f68eea1e15af59ff9bdb9f0004664ab6eef05715c4fad1aaa4d00a9ba7",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "version": "4.1.0"
+    },
+    {
+      "source_id": "A2-PowerSystems",
+      "url": "https://github.com/modelica-3rdparty/PowerSystems/tree/80343c524bb96a983374277732b84a19cf055052",
+      "commit": "80343c524bb96a983374277732b84a19cf055052",
+      "raw_path": "corpus/raw/A/PowerSystems-reflection.json",
+      "source_sha256": "b20cbf27d5cb9bd5fafb0cbcc4c49251a8eca5fca5d7ce5d7af5f24cb3f58a49",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "version": "2.1.0"
+    },
+    {
+      "source_id": "A2-ThermoPower",
+      "url": "https://github.com/casella/ThermoPower/tree/e2b011ac7fd90f9cf5771f29f1aefa160550b6ee",
+      "commit": "e2b011ac7fd90f9cf5771f29f1aefa160550b6ee",
+      "raw_path": "corpus/raw/A/ThermoPower-reflection.json",
+      "source_sha256": "e81d35309a83015a8e7ba4e1540eb4caca6cef64df7188eeb5b654efb59a386c",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "version": "3.1"
+    },
+    {
+      "source_id": "A2-ElectroMechanicalDrives",
+      "url": "https://github.com/christiankral/ElectroMechanicalDrives/tree/7dcc6ddd6c8c6efe8bb7f25080d6e35293f87600",
+      "commit": "7dcc6ddd6c8c6efe8bb7f25080d6e35293f87600",
+      "raw_path": "corpus/raw/A/ElectroMechanicalDrives-reflection.json",
+      "source_sha256": "5e5300b137a3f5bc03ffc236993021a843c95073b1cd2ce6dd63d74300223583",
+      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "version": "3.X.X"
+    }
+  ],
+  "gaps": [
+    {
+      "source_id": "C8",
+      "reason": "Public overview only; editor integration and full documentation not installed/validated."
+    }
+  ],
+  "libraries": {
+    "Modelica": {
+      "classes": 6368,
+      "parsed_class_count": 6368,
+      "errors": [],
+      "compatibility": "reference-only; no third-party simulation validation"
+    },
+    "PowerSystems": {
+      "classes": 1289,
+      "parsed_class_count": 1289,
+      "errors": [],
+      "compatibility": "reference-only; no third-party simulation validation"
+    },
+    "ThermoPower": {
+      "classes": 981,
+      "parsed_class_count": 981,
+      "errors": [
+        {
+          "fqn": "ThermoPower.Electrical.Load.powerCurve",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Electrical.Load.powerCurve), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:340:5:340:63] Class SI.Power not found in scope Load.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Electrical.Load.powerCurve not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Examples.RankineCycle.Models.PrescribedSpeedPump.flowCharacteristic",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Examples.RankineCycle.Models.PrescribedSpeedPump.flowCharacteristic), parsed=True):\n00: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Examples.mo:true:2492:9:2493:38] Class Modelica.SIunits.VolumeFlowRate not found in scope PrescribedSpeedPump.\n01: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Examples.RankineCycle.Models.PrescribedSpeedPump.flowCharacteristic not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.BaseClasses.FanBase.FlowCharacteristicModel",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.BaseClasses.FanBase.FlowCharacteristicModel), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:3571:7:3572:52] Class SI.PerUnit not found in scope FanBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.BaseClasses.FanBase.FlowCharacteristicModel not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.BaseClasses.Flow1DBase.squareReg",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.BaseClasses.Flow1DBase.squareReg), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:2847:7:2847:44] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.BaseClasses.Flow1DBase.squareReg not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.Flow1D.squareReg",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.Flow1D.squareReg), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:4200:5:4200:42] Class SI.Distance not found in scope Flow1D.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.Flow1D.squareReg not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.Flow1DFV.HeatTransfer",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.Flow1DFV.HeatTransfer), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:2847:7:2847:44] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.Flow1DFV.HeatTransfer not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.Flow1DFV2w.HeatTransfer2",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.Flow1DFV2w.HeatTransfer2), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:2847:7:2847:44] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.Flow1DFV2w.HeatTransfer2 not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.PressDrop.squareReg",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.PressDrop.squareReg), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:1627:5:1627:66] Class SI.PressureDifference not found in scope PressDrop.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.PressDrop.squareReg not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Gas.Valve.FlowChar",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Gas.Valve.FlowChar), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:2042:5:2047:83] Class SI.Area not found in scope Valve.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Gas.Valve.FlowChar not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.HRSG.Components.HE.HeatExchangerTopology",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.HRSG.Components.HE.HeatExchangerTopology), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/PowerPlants.mo:true:260:9:261:51] Class SI.MassFlowRate not found in scope HeatExchanger.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.HRSG.Components.HE.HeatExchangerTopology not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.HRSG.Components.HE2ph.HeatExchangerTopology",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.HRSG.Components.HE2ph.HeatExchangerTopology), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/PowerPlants.mo:true:260:9:261:51] Class SI.MassFlowRate not found in scope HeatExchanger.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.HRSG.Components.HE2ph.HeatExchangerTopology not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.HRSG.Components.ParHE.HeatExchangerTopology_A",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.HRSG.Components.ParHE.HeatExchangerTopology_A), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/PowerPlants.mo:true:360:9:361:51] Class SI.MassFlowRate not found in scope ParallelHE.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.HRSG.Components.ParHE.HeatExchangerTopology_A not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.HRSG.Components.ParHE_Des.HeatExchangerTopology_A_p1",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.HRSG.Components.ParHE_Des.HeatExchangerTopology_A_p1), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/PowerPlants.mo:true:489:9:490:51] Class SI.MassFlowRate not found in scope ParallelHE_Des.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.HRSG.Components.ParHE_Des.HeatExchangerTopology_A_p1 not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.HRSG.Components.PrescribedSpeedPump.flowCharacteristic",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.HRSG.Components.PrescribedSpeedPump.flowCharacteristic), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/PowerPlants.mo:true:3934:9:3934:73] Class SI.VolumeFlowRate not found in scope PrescribedSpeedPump.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.HRSG.Components.PrescribedSpeedPump.flowCharacteristic not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.PowerPlants.SteamTurbineGroup.Components.SteamTurbineVarEta.curveEta_iso",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.PowerPlants.SteamTurbineGroup.Components.SteamTurbineVarEta.curveEta_iso), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:6000:7:6001:50] Class SI.PerUnit not found in scope SteamTurbineBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.PowerPlants.SteamTurbineGroup.Components.SteamTurbineVarEta.curveEta_iso not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Test.GasComponents.TestFanMech.flowChar",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Test.GasComponents.TestFanMech.flowChar), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Gas.mo:true:3571:7:3572:52] Class SI.PerUnit not found in scope FanBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Test.GasComponents.TestFanMech.flowChar not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.CylinderFourier.MaterialModel",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.CylinderFourier.MaterialModel), parsed=True):\n00: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:3123:5:3124:26] Class NodeDistribution not found in scope CylinderFourier.\n01: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Thermal.CylinderFourier.MaterialModel not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.HeatExchangerTopologyFV.HeatExchangerTopology",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.HeatExchangerTopologyFV.HeatExchangerTopology), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:22:5:22:53] Class SI.Temperature not found in scope DHTVolumes.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Thermal.HeatExchangerTopologyFV.HeatExchangerTopology not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Functions.CtoKTable",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Functions.CtoKTable), parsed=True):\n00: [translation:error:39] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1766:9:1766:60] Base class Modelica.SIunits.Conversions.ConversionIcon not found in scope CtoKTable."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Functions.Polynomials_Temp.evaluate",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Functions.Polynomials_Temp.evaluate), parsed=True):\n00: [translation:error:39] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1781:9:1781:39] Base class Modelica.Icons.Library not found in scope Polynomials_Temp.\n01: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Thermal.MaterialProperties.Functions.Polynomials_Temp.evaluate not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Interfaces.PartialMaterial.InputTemperature",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Interfaces.PartialMaterial.InputTemperature), parsed=True):\n00: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1631:9:1631:73] Class PoissonNumber not found in scope PartialMaterial.\n01: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Thermal.MaterialProperties.Interfaces.PartialMaterial.InputTemperature not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Metals.AlloySteel_A335P12",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Metals.AlloySteel_A335P12), parsed=True):\n00: [translation:error:19] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1912:9:1935:71] extends Common.MaterialTable causes an instantiation loop."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Metals.AlloySteel_A335P22",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Metals.AlloySteel_A335P22), parsed=True):\n00: [translation:error:19] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1887:9:1908:47] extends Common.MaterialTable causes an instantiation loop."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Metals.CarbonSteel_A106B",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Metals.CarbonSteel_A106B), parsed=True):\n00: [translation:error:19] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1862:9:1883:47] extends Common.MaterialTable causes an instantiation loop."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Metals.CarbonSteel_A106C",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Metals.CarbonSteel_A106C), parsed=True):\n00: [translation:error:19] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1837:9:1858:47] extends Common.MaterialTable causes an instantiation loop."
+        },
+        {
+          "fqn": "ThermoPower.Thermal.MaterialProperties.Metals.StandardSteel",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Thermal.MaterialProperties.Metals.StandardSteel), parsed=True):\n00: [translation:error:19] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Thermal.mo:true:1823:9:1833:69] extends Common.MaterialTable causes an instantiation loop."
+        },
+        {
+          "fqn": "ThermoPower.Water.BaseClasses.Flow1DBase.squareReg",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.BaseClasses.Flow1DBase.squareReg), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.BaseClasses.Flow1DBase.squareReg not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.BaseClasses.PumpBase.efficiencyCharacteristic",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.BaseClasses.PumpBase.efficiencyCharacteristic), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:39] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Units.mo:true:8:3:9:30] Base class SI.Density not found in scope Units.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.BaseClasses.PumpBase.efficiencyCharacteristic not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.BaseClasses.ValveBase.FlowChar",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.BaseClasses.ValveBase.FlowChar), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5594:7:5599:85] Class SI.Area not found in scope ValveBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.BaseClasses.ValveBase.FlowChar not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFEM.HeatTransfer",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFEM.HeatTransfer), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFEM.HeatTransfer not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFEM2ph.HeatTransfer",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFEM2ph.HeatTransfer), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFEM2ph.HeatTransfer not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFV.HeatTransfer",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFV.HeatTransfer), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFV.HeatTransfer not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFV2ph.HeatTransfer",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFV2ph.HeatTransfer), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFV2ph.HeatTransfer not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFV2ph2w.HeatTransfer2",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFV2ph2w.HeatTransfer2), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFV2ph2w.HeatTransfer2 not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.Flow1DFV2w.HeatTransfer2",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.Flow1DFV2w.HeatTransfer2), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5460:7:5460:71] Class SI.Distance not found in scope Flow1DBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.Flow1DFV2w.HeatTransfer2 not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.PressDrop.squareReg",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.PressDrop.squareReg), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:607:5:607:66] Class SI.PressureDifference not found in scope PressDrop.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.PressDrop.squareReg not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.ValveLiqChoked.Flfun",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.ValveLiqChoked.Flfun), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5594:7:5599:85] Class SI.Area not found in scope ValveBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.ValveLiqChoked.Flfun not found in scope <top>."
+        },
+        {
+          "fqn": "ThermoPower.Water.ValveVap.xtfun",
+          "stage": "interface",
+          "error": "OMC error occurred for 'sendExpression(expr=getInheritedClasses(ThermoPower.Water.ValveVap.xtfun), parsed=True):\n00: [translation:error:70] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/package.mo:true:4:3:4:31] Import Modelica.SIunits not found in scope <top>.\n01: [translation:error:3] [/home/nathan/openmodelica-ai/repos/ThermoPower/ThermoPower/Water.mo:true:5594:7:5599:85] Class SI.Area not found in scope ValveBase.\n02: [translation:error:3] [:false:0:0:0:0] Class ThermoPower.Water.ValveVap.xtfun not found in scope <top>."
+        }
+      ],
+      "compatibility": "reference-only; no third-party simulation validation"
+    },
+    "ElectroMechanicalDrives": {
+      "classes": 78,
+      "parsed_class_count": 78,
+      "errors": [],
+      "compatibility": "reference-only; no third-party simulation validation"
+    }
+  },
+  "chunks": 8900,
+  "chunks_sha256": "e8a850e9aa81e921c9bff1ff9c5ff56166e7f943ff955cd428736e4e0165df23",
+  "retrieval": "Local lexical FTS5; not semantic retrieval or GraphRAG"
+}

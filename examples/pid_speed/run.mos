@@ -1,0 +1,9 @@
+// Run in a fresh directory containing this script and model.mo.
+loadModel(Modelica,{"4.1.0"},requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(SpeedPIDemo);
+getErrorString();
+simulate(SpeedPIDemo,startTime=0,stopTime=3,numberOfIntervals=3000,tolerance=1e-8,outputFormat="csv",fileNamePrefix="baseline");
+getErrorString();

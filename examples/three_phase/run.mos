@@ -1,0 +1,8 @@
+loadModel(Modelica, {"4.1.0"}, requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(ThreePhaseLineLoad);
+getErrorString();
+simulate(ThreePhaseLineLoad, stopTime=0.12, numberOfIntervals=2400, tolerance=1e-8, method="dassl", outputFormat="csv", fileNamePrefix="result");
+getErrorString();

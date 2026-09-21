@@ -1,0 +1,10 @@
+loadModel(Modelica, {"4.1.0"}, requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(RLStep);
+getErrorString();
+simulate(RLStep, stopTime=2, numberOfIntervals=2000, tolerance=1e-8, outputFormat="csv", fileNamePrefix="baseline");
+getErrorString();
+simulate(RLStep, stopTime=2, numberOfIntervals=2000, tolerance=1e-8, outputFormat="csv", fileNamePrefix="result", simflags="-override=R=4,L=0.25,V=12");
+getErrorString();

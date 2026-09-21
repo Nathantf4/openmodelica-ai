@@ -1,0 +1,121 @@
+{
+  "expected": 12,
+  "actual": 12,
+  "repositories": [
+    {
+      "name": "OpenModelica",
+      "group": "must",
+      "url": "https://github.com/OpenModelica/OpenModelica",
+      "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "OSMC-License.txt",
+        "OSMC-Runtime-License.txt"
+      ]
+    },
+    {
+      "name": "OMPython",
+      "group": "must",
+      "url": "https://github.com/OpenModelica/OMPython",
+      "commit": "17a0d32343bacd1385a98620e3a57e197b5518fa",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ModelicaRag.jl",
+      "group": "must",
+      "url": "https://github.com/OpenModelica/ModelicaRag.jl",
+      "commit": "6e683e2ae20c9b3059f242d1162626a62e35d548",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ModelicaStandardLibrary",
+      "group": "must",
+      "url": "https://github.com/modelica/ModelicaStandardLibrary",
+      "commit": "8ae3d35c24e519cb2996cab20f3b13daf2b0c50a",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ModelicaBook",
+      "group": "must",
+      "url": "https://github.com/mtiller/ModelicaBook",
+      "commit": "e9f0bc71f0c3f01be512dbeacd162f1b0749c030",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE.md"
+      ]
+    },
+    {
+      "name": "prompt2control",
+      "group": "must",
+      "url": "https://github.com/pnnl/prompt2control",
+      "commit": "6583075268e8ae1ad579284280986af3483a2aba",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "ModiGen",
+      "group": "must",
+      "url": "https://github.com/miko99jh/ModiGen",
+      "commit": "c917b443c5f073aa79e2f4856d03047b10c89567",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "PowerSystems",
+      "group": "should",
+      "url": "https://github.com/modelica-3rdparty/PowerSystems",
+      "commit": "80343c524bb96a983374277732b84a19cf055052",
+      "use": "read-only reference; not executable installation",
+      "license_files": []
+    },
+    {
+      "name": "ThermoPower",
+      "group": "should",
+      "url": "https://github.com/casella/ThermoPower",
+      "commit": "e2b011ac7fd90f9cf5771f29f1aefa160550b6ee",
+      "use": "read-only reference; not executable installation",
+      "license_files": []
+    },
+    {
+      "name": "LLModelica",
+      "group": "should",
+      "url": "https://github.com/benvansleen/LLModelica",
+      "commit": "2e2c24eb700b8c9a9eb9331cdc4d0c603cdaa597",
+      "use": "read-only reference; not executable installation",
+      "license_files": []
+    },
+    {
+      "name": "ElectroMechanicalDrives",
+      "group": "should",
+      "url": "https://github.com/christiankral/ElectroMechanicalDrives",
+      "commit": "7dcc6ddd6c8c6efe8bb7f25080d6e35293f87600",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    },
+    {
+      "name": "modelcontextprotocol",
+      "group": "should",
+      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol",
+      "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad",
+      "use": "read-only reference; not executable installation",
+      "license_files": [
+        "LICENSE"
+      ]
+    }
+  ]
+}

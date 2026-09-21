@@ -1,0 +1,9 @@
+.venv/
+repos/
+runtime/
+artifacts/
+corpus/raw/
+corpus/chunks/
+corpus/index.sqlite
+__pycache__/
+*.pyc

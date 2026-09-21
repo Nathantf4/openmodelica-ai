@@ -1,0 +1,3 @@
+# Shipped OpenModelica example
+
+`model.mo` is an unmodified copy of `OMCompiler/Examples/BouncingBall.mo` from the pinned OpenModelica v1.27.1 checkout at commit `4a7248c1ab64f4205eb4222b6b009bbf2b0df383`. Its SHA-256 is `84bdcefc5141a441bea078efe17cd9881c2596fe76204b49a8b5355f971dd7a9`. Upstream: https://github.com/OpenModelica/OpenModelica/blob/v1.27.1/OMCompiler/Examples/BouncingBall.mo . The full upstream license is retained in `COPYING.OpenModelica`; it is not relicensed by this workspace. See `repos/OpenModelica/OMCompiler/COPYING` for the OSMC-PL / AGPL terms. The new `run.mos` and local analysis reproduce that model, not a independently authored replacement.

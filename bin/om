@@ -1,0 +1,81 @@
+#!/usr/bin/env python3
+"""Pinned offline OM toolchain with exact-container cancellation cleanup."""
+import json
+import os
+import subprocess
+import sys
+import uuid
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+IMAGE = 'openmodelica/openmodelica@sha256:a79649b5b65bc3051b324efa05dbf24af460048d51894447e5e324d52e79c65f'
+sys.path.insert(0,str(ROOT/'scripts'))
+from container_guard import process_identity, LABEL
+
+
+def main():
+    cwd = Path.cwd().resolve()
+    if not cwd.is_relative_to(ROOT):
+        cwd = ROOT
+    args = sys.argv[1:] or ['omc','--version']
+    try:
+        timeout_seconds = int(os.environ.get('OPENMODELICA_TIMEOUT_SECONDS','600'))
+        if not 1 <= timeout_seconds <= 3600:
+            raise ValueError()
+    except ValueError:
+        print('OPENMODELICA_TIMEOUT_SECONDS must be an integer in 1..3600',file=sys.stderr)
+        return 2
+    token = uuid.uuid4().hex
+    name = 'hermes-om-'+token
+    read_fd, write_fd = os.pipe()
+    guard = subprocess.Popen([sys.executable,str(ROOT/'scripts/container_guard.py'),str(read_fd),token],
+        pass_fds=(read_fd,),stdin=subprocess.DEVNULL,stdout=subprocess.DEVNULL,
+        stderr=subprocess.DEVNULL,start_new_session=True)
+    os.close(read_fd)
+    result = 125
+    try:
+        def launch(command, capture=False):
+            child = subprocess.Popen(command,stdout=subprocess.PIPE if capture else None)
+            event = {'client_pid':child.pid,'client_start':process_identity(child.pid)}
+            os.write(write_fd,(json.dumps(event)+'\n').encode())
+            stdout,_ = child.communicate()
+            return child.returncode,stdout
+        # Create first: if the wrapper is killed during creation, there is no
+        # already-issued run request that could start after guardian cleanup.
+        command = ['docker','create','--pull','never','--rm','-i','--init',
+            '--name',name,'--label',f'{LABEL}={token}','--network','none',
+            '--cap-drop','ALL','--security-opt','no-new-privileges',
+            '--user',f'{os.getuid()}:{os.getgid()}','--cpus','2','--memory','3g',
+            '--pids-limit','256','--read-only','--tmpfs','/tmp:rw,nosuid,size=256m,mode=1777',
+            '-e',f'HOME={ROOT}/runtime/home','-e',f'TMPDIR={ROOT}/runtime/tmp',
+            '--mount',f'type=bind,src={ROOT},dst={ROOT},readonly',
+            '--mount',f'type=bind,src={ROOT}/runtime,dst={ROOT}/runtime',
+            '--mount',f'type=bind,src={ROOT}/artifacts,dst={ROOT}/artifacts',
+            '--mount',f'type=bind,src={ROOT}/repos,dst={ROOT}/repos,readonly',
+            '-w',str(cwd),'--entrypoint','/usr/bin/timeout',IMAGE,
+            '--signal=TERM','--kill-after=5s',str(timeout_seconds),*args]
+        created,_ = launch(command,capture=True)
+        if created:
+            result = created
+        else:
+            result,_ = launch(['docker','start','--attach','--interactive',name])
+        os.write(write_fd,b'{"normal_completion":true}\n')
+    except KeyboardInterrupt:
+        result = 130
+    except Exception as error:
+        print(f'OpenModelica wrapper failure: {error}',file=sys.stderr)
+        result = 125
+    finally:
+        os.close(write_fd)
+        try:
+            cleanup = guard.wait(timeout=30)
+        except subprocess.TimeoutExpired:
+            cleanup = 1
+        if cleanup:
+            print(f'Cleanup was not verified; inspect artifacts/lifecycle/{token}.json and container {name}',file=sys.stderr)
+            result = 125
+    return result
+
+
+if __name__ == '__main__':
+    sys.exit(main())

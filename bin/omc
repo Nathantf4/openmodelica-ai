@@ -1,0 +1,3 @@
+#!/bin/sh
+# Compatibility command; actual compiler runs in the project sandbox.
+exec /home/nathan/openmodelica-ai/bin/om omc "$@"

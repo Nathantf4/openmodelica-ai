@@ -1,0 +1,2500 @@
+{
+  "schema_version": 1,
+  "built_at": "2026-09-21T03:49:28.396774+00:00",
+  "builder": "scripts/research_build.py",
+  "scope": [
+    "B",
+    "D",
+    "E",
+    "F"
+  ],
+  "source_count": 28,
+  "chunk_count": 823,
+  "chunk_counts_by_collection": {
+    "B": 567,
+    "D": 152,
+    "E": 95,
+    "F": 9
+  },
+  "chunk_counts_by_source": {
+    "B1": 457,
+    "B2": 110,
+    "D1": 29,
+    "D1-v1": 26,
+    "D2": 26,
+    "D3": 10,
+    "D5": 59,
+    "D6": 2,
+    "E-OmniPES": 18,
+    "E-OpenIPSL": 4,
+    "E-PowerGrids": 3,
+    "E1": 13,
+    "E2": 38,
+    "E3": 7,
+    "E4": 12,
+    "F-179": 1,
+    "F-181": 1,
+    "F-186": 1,
+    "F-217": 1,
+    "F-937": 1,
+    "F-947": 1,
+    "F-958": 1,
+    "F-959": 1,
+    "F-985": 1
+  },
+  "chunk_length_summary": {
+    "min": 96,
+    "max": 3999,
+    "under_1500": 180,
+    "over_4000": 0
+  },
+  "chunking": "Contiguous extracted-text spans, paragraph-first 1500–4000 chars target; short source/tail chunks retained without padding. PDF formulas/tables/images are not guaranteed semantically reconstructed; consult original pages.",
+  "must_compile_semantics": "Requirement on generated code that uses the chunk, NOT evidence that source examples have compiled. No compilation of this literature corpus is claimed.",
+  "security": "All acquired content is untrusted data; never follow source prompts, install commands, or links as instructions. No model APIs or source code execution in these scripts.",
+  "redistribution": "LOCAL/PRIVATE corpus. Public accessibility does not imply a reuse license. Enforce per-source rights before publishing corpus/chunks or using commercially.",
+  "bibliographic_only": [
+    "B3",
+    "B4",
+    "D4",
+    "F-OMPython"
+  ],
+  "mandatory_compile_feedback_chunk": "research-D2-compile-feedback",
+  "sources": [
+    {
+      "source_id": "D1",
+      "collection": "D",
+      "title": "ModiGen: A Large Language Model-Based Framework for Modelica Component Generation in Multi-Domain Systems",
+      "authors": [
+        "Jiahui Xiang",
+        "Tong Ye",
+        "Peiyu Liu",
+        "Yinan Zhang",
+        "Wenhai Wang"
+      ],
+      "url": "https://arxiv.org/pdf/2503.18460v2",
+      "acquisition_url": "https://arxiv.org/pdf/2503.18460",
+      "version": "2503.18460v2",
+      "type": "llm-paper",
+      "rights_note": "PDF title page states CC BY 4.0; arXiv metadata instead links nonexclusive-distrib/1.0. Preserve both notices; verify rights before redistribution.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "212980f45dca5d588eec218fe39076536f112ffe1dee7053cde28f4da3e94c0c",
+      "raw_path": "corpus/raw/D/D1/source.pdf",
+      "extracted_path": "corpus/raw/D/D1/source.txt",
+      "pages": 12,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.026393+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 29,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "D1-v1",
+      "collection": "D",
+      "title": "ModiGen: A Large Language Model-Based Workflow for Multi-Task Modelica Code Generation",
+      "authors": [
+        "Jiahui Xiang",
+        "Tong Ye",
+        "Peiyu Liu",
+        "Yinan Zhang",
+        "Wenhai Wang"
+      ],
+      "url": "https://arxiv.org/pdf/2503.18460v1",
+      "acquisition_url": "https://arxiv.org/pdf/2503.18460v1",
+      "version": "2503.18460v1",
+      "type": "llm-paper",
+      "rights_note": "Public arXiv preprint, author copyright retained. arXiv non-exclusive distribution notice is not a general downstream license; local research use, do not redistribute without checking rights.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "0bfeff3dc84cbd39af9e63654d134f5a3d11364e48e01880b4909e6485289b08",
+      "raw_path": "corpus/raw/D/D1/v1.pdf",
+      "extracted_path": "corpus/raw/D/D1/v1.txt",
+      "pages": 12,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:40:20.420507+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 26,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "D2",
+      "collection": "D",
+      "title": "Automating Modelica Module Generation Using Large Language Models: A Case Study on Building Control Description Language",
+      "authors": [
+        "Hanlong Wan",
+        "Xing Lu",
+        "Yan Chen",
+        "Karthik Devaprasad",
+        "Laura Hinkle"
+      ],
+      "url": "https://arxiv.org/pdf/2509.14623v1",
+      "acquisition_url": "https://arxiv.org/pdf/2509.14623",
+      "version": "2509.14623v1",
+      "type": "llm-paper",
+      "rights_note": "Public arXiv/PNNL manuscript. arXiv non-exclusive distribution notice; DOE public-access and US-government-purpose notice on page 1 does not grant unrestricted downstream redistribution.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "f8636d499d8afe3de8dfe908d75456b6eadeb648ae3b162117484e84cfe09f9e",
+      "raw_path": "corpus/raw/D/D2/source.pdf",
+      "extracted_path": "corpus/raw/D/D2/source.txt",
+      "pages": 28,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.026880+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 26,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": [],
+      "repository_evidence": {
+        "commit": "6583075268e8ae1ad579284280986af3483a2aba",
+        "path": "corpus/raw/D/D2/ModuleGenerator.py.txt",
+        "upstream_path": "ModuleGenerator.py",
+        "sha256": "e1244c13aed4f9ee415ae6c114ea65bc26ac7b193d2ffda024e8b788e67b35a2",
+        "url": "https://github.com/pnnl/prompt2control/blob/6583075268e8ae1ad579284280986af3483a2aba/ModuleGenerator.py",
+        "locator": "lines 179–271",
+        "scope": "Read-only source evidence: OMPython session, loadFile/error loop and simulate/error loop. No checkModel call in this file; not executed."
+      }
+    },
+    {
+      "source_id": "D3",
+      "collection": "D",
+      "title": "Text2Model: Generating Dynamic Chemical Reactor Models Using Large Language Models (LLMs)",
+      "authors": [
+        "Sophia Rupprecht",
+        "Yassine Hounat",
+        "Monisha Kumar",
+        "Giacomo Lastrucci",
+        "Artur M. Schweidtmann"
+      ],
+      "url": "https://arxiv.org/pdf/2503.17004v1",
+      "acquisition_url": "https://arxiv.org/pdf/2503.17004",
+      "version": "2503.17004v1",
+      "type": "llm-paper",
+      "rights_note": "Public arXiv preprint; nonexclusive-distrib/1.0 notice, copyright retained. Local research copy; redistribution rights not assumed.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "551bdb1826807f5f5161f8c9c982152a60f6c1bbc8e66997b029c3ce1e8906dd",
+      "raw_path": "corpus/raw/D/D3/source.pdf",
+      "extracted_path": "corpus/raw/D/D3/source.txt",
+      "pages": 6,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.026725+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 10,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "D5",
+      "collection": "D",
+      "title": "A Guide to Large Language Models in Modeling and Simulation: From Core Techniques to Critical Challenges",
+      "authors": [
+        "Philippe J. Giabbanelli"
+      ],
+      "url": "https://arxiv.org/pdf/2602.05883v1",
+      "acquisition_url": "https://arxiv.org/pdf/2602.05883",
+      "version": "2602.05883v1",
+      "type": "llm-paper",
+      "rights_note": "CC BY-NC-ND 4.0 per arXiv license link. Local extracted retrieval text is not a permission to publish adaptations or use commercially.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "87f13d41ae044ebbfc29d8dadf852894b82748f70ea940287294890b25d1e10d",
+      "raw_path": "corpus/raw/D/D5/source.pdf",
+      "extracted_path": "corpus/raw/D/D5/source.txt",
+      "pages": 49,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.027163+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 59,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "D4",
+      "collection": "D",
+      "title": "Automating Model Transformation from Modelica to SysML v2 with LLM-based Agents",
+      "authors": [
+        "Eduardo Cibrián",
+        "José Francisco Olivert Iserte",
+        "Francesco Casella",
+        "Mario García Rodríguez",
+        "Jose María Alvarez-Rodríguez",
+        "Juan Llorens"
+      ],
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5564442",
+      "doi": "10.2139/ssrn.5564442",
+      "type": "llm-paper",
+      "status": "metadata-only-blocked",
+      "rights_note": "Copyright retained; no full-text rights established.",
+      "metadata_verified_against": "Crossref DOI deposit only; primary full text unavailable",
+      "raw_path": "corpus/raw/D/D4/crossref.json",
+      "sha256": "4ebc285757906a98b6f932ad396ded7b76fc7cfee0daa9faebffe03c202f383a",
+      "gap": "SSRN HTTP 403. Exact-title searches scoped to polimi.it and uc3m.es did not locate a matching public manuscript. A UC3M research-stay record is not the paper and is not substituted. No claims or summary chunks manufactured.",
+      "source_class": "primary",
+      "audience": [
+        "methods"
+      ],
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 0
+    },
+    {
+      "source_id": "D6",
+      "collection": "D",
+      "title": "AI-Powered System Simulation with Modelica",
+      "authors": [
+        "Lixiang Li"
+      ],
+      "url": "https://www.modelon.com/blog/from-intent-to-insight-ai-driven-physics-based-modeling-with-modelica/",
+      "type": "llm-paper",
+      "status": "full-text-html",
+      "publication_date": "2026-03-18",
+      "source_class": "vendor-practitioner-account",
+      "content_kind": "primary-vendor-article",
+      "rights_note": "Public Modelon blog; copyright retained, no blanket reuse license observed. Local research only.",
+      "raw_path": "corpus/raw/D/D6/source.html",
+      "extracted_path": "corpus/raw/D/D6/source.md",
+      "sha256": "aa56e0510bf9c4663414b754c8d07897240685a96d4b8c49c68d3a287d3e03ab",
+      "checksum_scope": "defuddle extraction; raw HTML has a separate receipt hash",
+      "metadata_verified_against": "HTML title and visible byline/date",
+      "audience": [
+        "methods"
+      ],
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 2
+    },
+    {
+      "source_id": "B1",
+      "collection": "B",
+      "title": "Modelica by Example",
+      "authors": [
+        "Michael Tiller"
+      ],
+      "url": "https://github.com/mtiller/ModelicaBook",
+      "version": "e9f0bc71f0c3f01be512dbeacd162f1b0749c030",
+      "type": "textbook",
+      "status": "english-source-text",
+      "rights_note": "Copyright Michael Tiller. LICENSE.md grants CC BY-NC-ND 3.0 only to HTML output, and expressly does NOT license source/derived-work redistribution. This English source snapshot and retrieval chunks are local/private only. ModelicaByExample code separately MIT. Obtain permission before redistribution or commercial deployment.",
+      "scope": "All tracked English narrative RST, excluding unwritten advanced.rst and developer todo.rst; literalinclude code retained once by source path; no locale/build/retired copies.",
+      "raw_path": "corpus/raw/B/B1",
+      "source_files": [
+        "corpus/raw/B/B1/text/source/behavior/arrays.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/chem.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/construction.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/declarations.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/functions.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/indexing.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/looping.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/oned.rst",
+        "corpus/raw/B/B1/text/source/behavior/arrays/state_space.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/bouncing.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/cooling.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/decay.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/events.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/hysteresis.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/if.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/measuring.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/sampling.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/switching.rst",
+        "corpus/raw/B/B1/text/source/behavior/discrete/when.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/annotations.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/electrical.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/equations.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/first_order.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/initialization.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/mechanical.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/model_def.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/physical.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/population.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/record_def.rst",
+        "corpus/raw/B/B1/text/source/behavior/equations/variables.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/control_flow.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/controller.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/external.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/func_annos.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/func_def.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/interpolation.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/nonlinear.rst",
+        "corpus/raw/B/B1/text/source/behavior/functions/polynomial.rst",
+        "corpus/raw/B/B1/text/source/components/architectures.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/expandable.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/int_vs_imp.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/replaceable.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/sensor_comparison.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/sensor_comparison_ad.rst",
+        "corpus/raw/B/B1/text/source/components/architectures/thermal_control.rst",
+        "corpus/raw/B/B1/text/source/components/components.rst",
+        "corpus/raw/B/B1/text/source/components/components/block_comps.rst",
+        "corpus/raw/B/B1/text/source/components/components/chem_comps.rst",
+        "corpus/raw/B/B1/text/source/components/components/comp_annos.rst",
+        "corpus/raw/B/B1/text/source/components/components/component_models.rst",
+        "corpus/raw/B/B1/text/source/components/components/elec_comps.rst",
+        "corpus/raw/B/B1/text/source/components/components/heat_transfer.rst",
+        "corpus/raw/B/B1/text/source/components/components/population.rst",
+        "corpus/raw/B/B1/text/source/components/components/rot_comps_adv.rst",
+        "corpus/raw/B/B1/text/source/components/components/rot_comps_basic.rst",
+        "corpus/raw/B/B1/text/source/components/components/speed_comps.rst",
+        "corpus/raw/B/B1/text/source/components/components/system_models.rst",
+        "corpus/raw/B/B1/text/source/components/connectors.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/annotations.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/block_connectors.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/connector_def.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/fluid_connectors.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/graphics.rst",
+        "corpus/raw/B/B1/text/source/components/connectors/simple_domains.rst",
+        "corpus/raw/B/B1/text/source/components/packages.rst",
+        "corpus/raw/B/B1/text/source/components/packages/fqn.rst",
+        "corpus/raw/B/B1/text/source/components/packages/importing.rst",
+        "corpus/raw/B/B1/text/source/components/packages/lookup.rst",
+        "corpus/raw/B/B1/text/source/components/packages/msl.rst",
+        "corpus/raw/B/B1/text/source/components/packages/nimport.rst",
+        "corpus/raw/B/B1/text/source/components/packages/organizing.rst",
+        "corpus/raw/B/B1/text/source/components/packages/package_def.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/comp_arrays.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/gear.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/heat_transfer.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/modifications.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/pendulums.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/population.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/power_supply.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/propagation.rst",
+        "corpus/raw/B/B1/text/source/components/subsystems/sub_interface.rst",
+        "corpus/raw/B/B1/text/source/front/ack.rst",
+        "corpus/raw/B/B1/text/source/front/dedication.rst",
+        "corpus/raw/B/B1/text/source/front/intro.rst",
+        "corpus/raw/B/B1/text/source/front/preface.rst",
+        "corpus/raw/B/B1/text/source/index.rst"
+      ],
+      "unresolved_includes": [],
+      "source_class": "primary",
+      "audience": [
+        "methods"
+      ],
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 457,
+      "english_rst_files": 90,
+      "referenced_code_files": 199,
+      "sha256": "397339c54b4a3862291af408635120bb8b1f981696abd7cbe352dfa4b590501e",
+      "checksum_scope": "inventory; individual chunks hash their exact source files"
+    },
+    {
+      "source_id": "B2",
+      "collection": "B",
+      "title": "Principles of Object-Oriented Modeling and Simulation with Modelica 2.1 — publicly supplied excerpts",
+      "authors": [
+        "Peter Fritzson"
+      ],
+      "url": "https://www.ida.liu.se/labs/pelab/modelica/OpenModelica/Documents/ModelicaBookExcerpts.pdf",
+      "acquisition_url": "https://www.ida.liu.se/labs/pelab/modelica/OpenModelica/Documents/ModelicaBookExcerpts.pdf",
+      "version": null,
+      "type": "textbook",
+      "rights_note": "Copyrighted book. Only the author/institution-hosted public excerpt supplied in the briefing is acquired. No license to the full book or public redistribution of extracts is implied.",
+      "status": "public-excerpt-only",
+      "content_kind": "public-excerpt",
+      "sha256": "ee21bc77988719a2195e0fb24c06087e5290b1aeaa3b7393508ea9f6f9177d0e",
+      "raw_path": "corpus/raw/B/B2/source.pdf",
+      "extracted_path": "corpus/raw/B/B2/source.txt",
+      "pages": 84,
+      "empty_pages": [
+        12
+      ],
+      "retrieved_at": "2026-09-21T03:37:30.305834+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 110,
+      "verified_blank_pages": [
+        12
+      ],
+      "pages_requiring_ocr": [],
+      "briefing_mismatch": "Supplied PDF identifies Modelica 2.1, not the requested Modelica 3.3 second edition. Historical language/library API context only."
+    },
+    {
+      "source_id": "B3",
+      "collection": "B",
+      "title": "Getting Started with Modelica",
+      "authors": [
+        "Ankit Anurag Naik"
+      ],
+      "url": "https://modelica.org/publications/books/",
+      "type": "textbook",
+      "status": "bibliographic-only",
+      "rights_note": "Copyrighted book; no licensed full text acquired or chunked.",
+      "publication_date": "2026-04-17",
+      "isbn13": "978-9199160801",
+      "pages": 276,
+      "metadata_verified_against": "Modelica Association book list; public Amazon product metadata (publisher/extraction), not book contents.",
+      "evidence_path": "corpus/raw/B/B3/publisher.md",
+      "sha256": "51979245b1c7f5ceb016fe44a50feb1fc2d13221ab7782c63779b3d2b6ad4c25",
+      "gap": "No full-text rights established. Public product page says examples use Wolfram System Modeler, not other environments; applicability to OpenModelica must be checked.",
+      "source_class": "primary",
+      "audience": [
+        "methods"
+      ],
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 0
+    },
+    {
+      "source_id": "B4",
+      "collection": "B",
+      "title": "Introduction to Physical Modeling with Modelica",
+      "authors": [
+        "Michael Tiller"
+      ],
+      "url": "https://link.springer.com/book/10.1007/978-1-4615-1561-6",
+      "type": "textbook",
+      "status": "bibliographic-only",
+      "rights_note": "Copyrighted Springer/Kluwer book. No full text acquired or chunked.",
+      "year": 2001,
+      "isbn": [
+        "9781461356158",
+        "9781461515616"
+      ],
+      "metadata_verified_against": "Crossref publisher DOI deposit; Modelica Association book listing. Springer body was a client-load interstitial, not content.",
+      "raw_path": "corpus/raw/B/B4/crossref.json",
+      "sha256": "2b649929eab5af572d0b5162e68dac00885915c0ae48439105251d1120b65cca",
+      "gap": "No licensed full text. Springer HTML extraction rejected after inspection.",
+      "source_class": "primary",
+      "audience": [
+        "methods"
+      ],
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 0
+    },
+    {
+      "source_id": "E1",
+      "collection": "E",
+      "title": "Modelling and Simulation of Power Systems with Grid-Connected Converters in OpenModelica",
+      "authors": [
+        "Lluc Figueras Llerins",
+        "Vinícius Albernaz Lacerda",
+        "Eduardo Prieto-Araujo",
+        "Oriol Gomis-Bellmunt",
+        "Adrien Guironnet",
+        "Quentin Cossart"
+      ],
+      "url": "https://arxiv.org/pdf/2112.00862v1",
+      "acquisition_url": "https://arxiv.org/pdf/2112.00862",
+      "version": "2112.00862v1",
+      "type": "library-class",
+      "rights_note": "Public author preprint on arXiv; copyright retained, downstream reuse license not established. Local research only.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "8897f87ff6ee62b1282d2d29e35f1e6d5190047ae17db110a2712d831c8dba88",
+      "raw_path": "corpus/raw/E/E1/source.pdf",
+      "extracted_path": "corpus/raw/E/E1/source.txt",
+      "pages": 7,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.227271+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "electrical-power"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 13,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "E2",
+      "collection": "E",
+      "title": "Modeling of Induction Motors and Variable Speed Drives for Multi-Domain System Simulations Using Modelica and the OpenIPSL Library",
+      "authors": [
+        "Fernando Fachini",
+        "Marcelo de Castro",
+        "Tetiana Bogodorova",
+        "Luigi Vanfretti"
+      ],
+      "url": "https://www.mdpi.com/2079-9292/13/9/1614",
+      "acquisition_url": "https://mdpi-res.com/d_attachment/electronics/electronics-13-01614/article_deploy/electronics-13-01614-v3.pdf",
+      "version": "Electronics 2024, 13(9), 1614; publisher PDF v3",
+      "type": "library-class",
+      "rights_note": "CC BY 4.0, verified on original PDF page 1 and Crossref deposit. Acquired from public publisher CDN, not a third-party mirror.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "68d3cd8d753d8b73d30692f6ab2f52ef65b0e1fad6952b6a880eabc7d8cfabb0",
+      "raw_path": "corpus/raw/E/E2/sourcepdf.pdf",
+      "extracted_path": "corpus/raw/E/E2/sourcepdf.txt",
+      "pages": 35,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:39:09.355887+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "electrical-power",
+        "machines-drives"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 38,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "E3",
+      "collection": "E",
+      "title": "Flexible modeling of electrical power systems — the Modelica PowerSystems library",
+      "authors": [
+        "Rüdiger Franke",
+        "Hansjürg Wiesmann"
+      ],
+      "url": "https://2014.international.conference.modelica.org/proceedings/html/submissions/ECP14096515_FrankeWiesmann.pdf",
+      "acquisition_url": "https://2014.international.conference.modelica.org/proceedings/html/submissions/ECP14096515_FrankeWiesmann.pdf",
+      "version": "Modelica Conference 2014, DOI 10.3384/ecp14096515",
+      "type": "library-class",
+      "rights_note": "Public Modelica Conference 2014 proceedings paper; paper reuse license not established. Library license quoted in paper does not automatically license the paper.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "2746a63c9865bd1338fac0f9dc00183e875896bd6e96a7c65af712dec314b825",
+      "raw_path": "corpus/raw/E/E3/source.pdf",
+      "extracted_path": "corpus/raw/E/E3/source.txt",
+      "pages": 8,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:37:30.386684+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "electrical-power"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 7,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "E4",
+      "collection": "E",
+      "title": "Modelica libraries for dc machines, three phase and polyphase machines",
+      "authors": [
+        "C. Kral",
+        "A. Haumer"
+      ],
+      "url": "https://modelica.org/events/Conference2005/online_proceedings/Session7/Session7a2.pdf",
+      "acquisition_url": "https://modelica.org/events/Conference2005/online_proceedings/Session7/Session7a2.pdf",
+      "version": "Modelica Conference 2005, pp. 549–558",
+      "type": "library-class",
+      "rights_note": "Public Modelica Association conference PDF. Copyright retained; reuse license not established. Local research copy.",
+      "status": "full-text",
+      "content_kind": "primary-text",
+      "sha256": "266e5fe04fed598266ad0c93c35518d26b2142bd0c40157fa2c79737020532f8",
+      "raw_path": "corpus/raw/E/E4/source.pdf",
+      "extracted_path": "corpus/raw/E/E4/source.txt",
+      "pages": 11,
+      "empty_pages": [],
+      "retrieved_at": "2026-09-21T03:41:28.484664+00:00",
+      "metadata_verified_against": "Original PDF title/author page; not PDF document properties",
+      "domain": [
+        "electrical-power",
+        "machines-drives"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "source_class": "primary",
+      "task": [
+        "generate-component",
+        "simulate"
+      ],
+      "must_compile": true,
+      "chunk_count": 12,
+      "verified_blank_pages": [],
+      "pages_requiring_ocr": []
+    },
+    {
+      "source_id": "E-PowerGrids",
+      "collection": "E",
+      "title": "PowerGrids — Modelica library for electro-mechanical modelling of power systems",
+      "authors": [],
+      "url": "https://github.com/PowerGrids/PowerGrids",
+      "type": "library-class",
+      "status": "public-readme-metadata",
+      "content_kind": "library-readme",
+      "must_compile": false,
+      "rights_note": "Public upstream repository README snapshot for discovery. No library source clone or class corpus acquired here; verify repository license before reuse.",
+      "domain": [
+        "electrical-power"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "task": [
+        "search-library",
+        "simulate"
+      ],
+      "raw_path": "corpus/raw/E/E-PowerGrids/source.html",
+      "extracted_path": "corpus/raw/E/E-PowerGrids/source.md",
+      "sha256": "50303f52eac4460915cc6caf863cd81a099d9b7290d99c93c3aae3bada5c85a8",
+      "checksum_scope": "defuddle README extraction",
+      "metadata_verified_against": "Live upstream repository README",
+      "gap": "Catalog/discovery only; no claim that these libraries are installed or compatible with the current runtime.",
+      "source_class": "primary",
+      "chunk_count": 3
+    },
+    {
+      "source_id": "E-OpenIPSL",
+      "collection": "E",
+      "title": "OpenIPSL — Open-Instance Power System Library",
+      "authors": [],
+      "url": "https://github.com/OpenIPSL/OpenIPSL",
+      "type": "library-class",
+      "status": "public-readme-metadata",
+      "content_kind": "library-readme",
+      "must_compile": false,
+      "rights_note": "Public upstream repository README snapshot for discovery. No library source clone or class corpus acquired here; verify repository license before reuse.",
+      "domain": [
+        "electrical-power"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "task": [
+        "search-library",
+        "simulate"
+      ],
+      "raw_path": "corpus/raw/E/E-OpenIPSL/source.html",
+      "extracted_path": "corpus/raw/E/E-OpenIPSL/source.md",
+      "sha256": "2a4ed8cfebcea3eee6002407134830c039d2340bab553c5928358a644f36c263",
+      "checksum_scope": "defuddle README extraction",
+      "metadata_verified_against": "Live upstream repository README",
+      "gap": "Catalog/discovery only; no claim that these libraries are installed or compatible with the current runtime.",
+      "source_class": "primary",
+      "chunk_count": 4
+    },
+    {
+      "source_id": "E-OmniPES",
+      "collection": "E",
+      "title": "OmniPES — Modelica Library for Power Systems Simulation",
+      "authors": [],
+      "url": "https://github.com/marcelotomim/OmniPES",
+      "type": "library-class",
+      "status": "public-readme-metadata",
+      "content_kind": "library-readme",
+      "must_compile": false,
+      "rights_note": "Public upstream repository README snapshot for discovery. No library source clone or class corpus acquired here; verify repository license before reuse.",
+      "domain": [
+        "electrical-power"
+      ],
+      "audience": [
+        "methods",
+        "corporate-ee"
+      ],
+      "task": [
+        "search-library",
+        "simulate"
+      ],
+      "raw_path": "corpus/raw/E/E-OmniPES/source.html",
+      "extracted_path": "corpus/raw/E/E-OmniPES/source.md",
+      "sha256": "abd11f231fb0ddf5ec8740bcd930f3f23e117e88e5964321c791b69c1cd1a722",
+      "checksum_scope": "defuddle README extraction",
+      "metadata_verified_against": "Live upstream repository README",
+      "gap": "Catalog/discovery only; no claim that these libraries are installed or compatible with the current runtime.",
+      "source_class": "primary",
+      "chunk_count": 18
+    },
+    {
+      "source_id": "F-179",
+      "collection": "F",
+      "title": "The FMI 3.0 Standard Interface for Clocked and Scheduled Simulations",
+      "authors": [
+        "Cláudio Gomes",
+        "Torsten Blochwitz",
+        "Christian Bertsch",
+        "Karl Wernersson",
+        "Klaus Schuch",
+        "Pierre R.",
+        "Oliver Kotte",
+        "Irina Zacharias",
+        "Matthias Blesken",
+        "Torsten Sommer",
+        "Masoud Najafi",
+        "Andreas Junghanns"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/179",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp2118127",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/179/139",
+      "publication_date": "2021/09/27",
+      "raw_path": "corpus/raw/F/F-179/source.html",
+      "extracted_path": "corpus/raw/F/F-179/source.md",
+      "sha256": "f5973d5d999da474bfe2c732af2467ae63fa4ee646e856f236032720333de125",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-181",
+      "collection": "F",
+      "title": "Modelica, FMI and SSP for LOTAR of Analytical mBSE models: First Implementation and Feedback",
+      "authors": [
+        "Clément Coïc",
+        "Adrian Murton",
+        "Juan Carlos Mendo",
+        "Mark Williams",
+        "Hubertus Tummescheit",
+        "Kurt Woodham"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/181",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp2118149",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/181/141",
+      "publication_date": "2021/09/27",
+      "raw_path": "corpus/raw/F/F-181/source.html",
+      "extracted_path": "corpus/raw/F/F-181/source.md",
+      "sha256": "1bd95517a94a45d250ff1cea2cc24c7d8a778a6678e327622b66483d3d661db4",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-186",
+      "collection": "F",
+      "title": "OpenModelica.jl: A modular and extensible Modelica compiler framework in Julia targeting ModelingToolkit.jl",
+      "authors": [
+        "John Tinnerholm",
+        "Adrian Pop",
+        "Andreas Heuermann",
+        "Martin Sjölund"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/186",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp21181109",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/186/146",
+      "publication_date": "2021/09/27",
+      "raw_path": "corpus/raw/F/F-186/source.html",
+      "extracted_path": "corpus/raw/F/F-186/source.md",
+      "sha256": "2ec5bc4af7f1ac5c6b1c8e1f7786fef2667638e8298dc3401f0e0199b864e606",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-217",
+      "collection": "F",
+      "title": "A Cloud-native Implementation of the Simulation as a Service-Concept Based on FMI",
+      "authors": [
+        "Moritz Stüber",
+        "Georg Frey"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/217",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp21181393",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/217/177",
+      "publication_date": "2021/09/27",
+      "raw_path": "corpus/raw/F/F-217/source.html",
+      "extracted_path": "corpus/raw/F/F-217/source.md",
+      "sha256": "e7fe103cc622053fa886c5656fae7f4c9540ab232c4e5a1e45d76615cbc1c6ac",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-937",
+      "collection": "F",
+      "title": "Application of the OpenModelica-Matlab Interface to Integrated Simulation and Successive Linearization Based Model Predictive Control",
+      "authors": [
+        "Mohammad Hadi Alizadeh",
+        "Ali M. Sahlodin",
+        "Arunkumar Palanisamy",
+        "Francesco Casella",
+        "Peter Fritzson"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/937",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp204293",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/937/845",
+      "publication_date": "2023/12/22",
+      "raw_path": "corpus/raw/F/F-937/source.html",
+      "extracted_path": "corpus/raw/F/F-937/source.md",
+      "sha256": "e3cae3978a32bdcf9d9f99a943808fbeb4d0b15e9a1b153271cc5b2c59531300",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-947",
+      "collection": "F",
+      "title": "Beyond FMI - Towards New Applications with Layered Standards",
+      "authors": [
+        "Christian Bertsch",
+        "Markus Süvern",
+        "Torsten Sommer",
+        "Klaus Schuch",
+        "Kevin Reim",
+        "Pierre R.",
+        "Benedikt Menne",
+        "Andreas Junghanns",
+        "Torsten Blochwitz",
+        "Matthias Blesken",
+        "Patrick Täuber"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/947",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp204381",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/947/855",
+      "publication_date": "2023/12/22",
+      "raw_path": "corpus/raw/F/F-947/source.html",
+      "extracted_path": "corpus/raw/F/F-947/source.md",
+      "sha256": "0f48572ac90728759ba11e28fbb93df4219f44aa3f3039aec5bd2075dbcc3a10",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-958",
+      "collection": "F",
+      "title": "A preCICE-FMI Runner to Couple FMUs to PDE-Based Simulations",
+      "authors": [
+        "Leonard Willeke",
+        "David Schneider",
+        "Benjamin Uekermann"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/958",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp204479",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/958/866",
+      "publication_date": "2023/12/22",
+      "raw_path": "corpus/raw/F/F-958/source.html",
+      "extracted_path": "corpus/raw/F/F-958/source.md",
+      "sha256": "cff34b7c594ba06a6fa4d58c92fdee605fcd82d64649850181ad3c368027c4c7",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-959",
+      "collection": "F",
+      "title": "Secure Exchange of Black-Box Simulation Models using FMI in the Industrial Context",
+      "authors": [
+        "Christian Wolf",
+        "Miriam Schleipen",
+        "Georg Frey"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/959",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp204487",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/959/900",
+      "publication_date": "2023/12/22",
+      "raw_path": "corpus/raw/F/F-959/source.html",
+      "extracted_path": "corpus/raw/F/F-959/source.md",
+      "sha256": "a4ed46ed13d44a2551ce514853e1b9569beb4202f7b835af41ced7ceb9794844",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-985",
+      "collection": "F",
+      "title": "Hybrid Power Systems Simulation and Optimization Utilizing SSP and FMI",
+      "authors": [
+        "Dai Araki",
+        "Magnus Sandell"
+      ],
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/985",
+      "type": "tool-api",
+      "status": "catalog-abstract",
+      "content_kind": "proceedings-catalog-abstract",
+      "must_compile": false,
+      "rights_note": "Public proceedings metadata and abstract only; full paper not ingested. Consult linked original for its license.",
+      "domain": [
+        "general"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "task": [
+        "simulate",
+        "export-fmu"
+      ],
+      "doi": "10.3384/ecp204743",
+      "pdf_url": "https://ecp.ep.liu.se/index.php/modelica/article/download/985/893",
+      "publication_date": "2023/12/22",
+      "raw_path": "corpus/raw/F/F-985/source.html",
+      "extracted_path": "corpus/raw/F/F-985/source.md",
+      "sha256": "aec5783ccdd37c62b92701a627bbbbc2fa96109efb58c7f407f65732645cef5f",
+      "checksum_scope": "defuddle extraction",
+      "selection_reason": "Methodology/tooling/FMI; selected from 2021/2023 proceedings by briefing keywords and manual relevance review.",
+      "source_class": "primary",
+      "chunk_count": 1
+    },
+    {
+      "source_id": "F-OMPython",
+      "collection": "F",
+      "title": "An OpenModelica Python Interface and its use in PySimulator",
+      "authors": [
+        "Anand Kalaiarasi Ganeson",
+        "Peter Fritzon",
+        "Olena Rogovchenko",
+        "Adeel Asghar",
+        "Martin Sjölund",
+        "Andreas Pfeiffer"
+      ],
+      "url": "https://doi.org/10.3384/ecp12076537",
+      "doi": "10.3384/ecp12076537",
+      "type": "tool-api",
+      "status": "catalog-metadata-only",
+      "content_kind": "proceedings-catalog-metadata",
+      "must_compile": false,
+      "rights_note": "Crossref bibliographic metadata only. Historical 2012 paper; not current OMPython installation/API guidance.",
+      "raw_path": "corpus/raw/F/F-OMPython/crossref.json",
+      "sha256": "d27279eafc900b0e64f0e8d77fea9df755defa94510dfe826de4feac8cc41c7d",
+      "year": 2012,
+      "task": [
+        "simulate"
+      ],
+      "audience": [
+        "methods",
+        "interoperability"
+      ],
+      "source_class": "primary",
+      "domain": [
+        "general"
+      ],
+      "chunk_count": 0
+    }
+  ],
+  "acquisition_receipts": [
+    {
+      "path": "corpus/raw/B/B2/source.receipt.json",
+      "source_id": "B2",
+      "url": "https://www.ida.liu.se/labs/pelab/modelica/OpenModelica/Documents/ModelicaBookExcerpts.pdf",
+      "retrieved_at": "2026-09-21T03:37:30.305834+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://www.ida.liu.se/labs/pelab/modelica/OpenModelica/Documents/ModelicaBookExcerpts.pdf",
+          "content_type": "application/pdf",
+          "bytes": 743617
+        }
+      ],
+      "raw_path": "corpus/raw/B/B2/source.pdf",
+      "sha256": "ee21bc77988719a2195e0fb24c06087e5290b1aeaa3b7393508ea9f6f9177d0e",
+      "final_url": "https://www.ida.liu.se/labs/pelab/modelica/OpenModelica/Documents/ModelicaBookExcerpts.pdf",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "Adobe Acrobat 6.0",
+        "producer": "Acrobat Distiller 6.0 (Windows)",
+        "creationDate": "D:20060122175446+01'00'",
+        "modDate": "D:20060122175749+01'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 84,
+      "empty_pages": [
+        12
+      ],
+      "text_path": "corpus/raw/B/B2/source.txt",
+      "text_sha256": "9cfa4f54b9becc2ae960136b593ab4b0f20753aee4da11468c7b9007c5bd8527",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/B/B3/publisher.receipt.json",
+      "source_id": "B3",
+      "url": "https://www.amazon.com/Getting-Started-Modelica-Language-Modeling/dp/9199160803/",
+      "retrieved_at": "2026-09-21T03:39:09.356258+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://www.amazon.com/Getting-Started-Modelica-Language-Modeling/dp/9199160803/",
+          "content_type": "text/html",
+          "bytes": 3781
+        }
+      ],
+      "text_path": "corpus/raw/B/B3/publisher.md",
+      "text_sha256": "51979245b1c7f5ceb016fe44a50feb1fc2d13221ab7782c63779b3d2b6ad4c25",
+      "status": "extracted",
+      "raw_path": "corpus/raw/B/B3/publisher.html",
+      "sha256": "43b497fc407d7821ad3c7ca498d8f7e3ec31474c59ba5a994b37dda56c29d7c3",
+      "final_url": "https://www.amazon.com/Getting-Started-Modelica-Language-Modeling/dp/9199160803/"
+    },
+    {
+      "path": "corpus/raw/B/B3/source.receipt.json",
+      "source_id": "B3",
+      "url": "https://modelica.org/publications/books/",
+      "retrieved_at": "2026-09-21T03:37:30.884090+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://modelica.org/publications/books/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 24900
+        }
+      ],
+      "text_path": "corpus/raw/B/B3/source.md",
+      "text_sha256": "040c6988a0b03044bdd9b9f527686ec2f48becec7e75377c222f9b56fff9ec4c",
+      "status": "extracted",
+      "raw_path": "corpus/raw/B/B3/source.html",
+      "sha256": "77f4fb1ff048f33e39a964e5c237e6eb8740cb7d90bdff5ed36c562701a616d4",
+      "final_url": "https://modelica.org/publications/books/"
+    },
+    {
+      "path": "corpus/raw/B/B4/crossref.receipt.json",
+      "source_id": "B4",
+      "url": "https://api.crossref.org/works/10.1007/978-1-4615-1561-6",
+      "retrieved_at": "2026-09-21T03:40:20.420830+00:00",
+      "kind": "json",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://api.crossref.org/works/10.1007/978-1-4615-1561-6",
+          "content_type": "application/json",
+          "bytes": 1970
+        }
+      ],
+      "raw_path": "corpus/raw/B/B4/crossref.json",
+      "sha256": "2b649929eab5af572d0b5162e68dac00885915c0ae48439105251d1120b65cca",
+      "final_url": "https://api.crossref.org/works/10.1007/978-1-4615-1561-6",
+      "status": "downloaded"
+    },
+    {
+      "path": "corpus/raw/B/B4/source.receipt.json",
+      "source_id": "B4",
+      "url": "https://link.springer.com/book/10.1007/978-1-4615-1561-6",
+      "retrieved_at": "2026-09-21T03:39:29.595649+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://link.springer.com/book/10.1007/978-1-4615-1561-6",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 3038
+        }
+      ],
+      "text_path": "corpus/raw/B/B4/source.md",
+      "text_sha256": "51cbac0c33a1c68beb642548808aa0f88e4371da29e7ddcb0b4068b2f9446fcf",
+      "status": "rejected-interstitial",
+      "review_note": "HTTP 200 and defuddle exit 0 were false success: extracted text only says a required part of this site could not load. Not indexed; Crossref metadata used instead.",
+      "raw_path": "corpus/raw/B/B4/source.html",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "final_url": "https://link.springer.com/book/10.1007/978-1-4615-1561-6"
+    },
+    {
+      "path": "corpus/raw/D/D1/metadata.receipt.json",
+      "source_id": "D1",
+      "url": "https://arxiv.org/abs/2503.18460",
+      "retrieved_at": "2026-09-21T03:38:07.836479+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2503.18460",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 41830
+        }
+      ],
+      "text_path": "corpus/raw/D/D1/metadata.md",
+      "text_sha256": "9f79a5123e64295016e05896eb31da39507d38980a155147245d6631c73db58f",
+      "status": "extracted",
+      "raw_path": "corpus/raw/D/D1/metadata.html",
+      "sha256": "81740c549a11cbdc16a2e1af985c4e9f40278f5ad32077f3e0a744dcfc60ddac",
+      "final_url": "https://arxiv.org/abs/2503.18460"
+    },
+    {
+      "path": "corpus/raw/D/D1/source.receipt.json",
+      "source_id": "D1",
+      "url": "https://arxiv.org/pdf/2503.18460",
+      "retrieved_at": "2026-09-21T03:37:30.026393+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2503.18460",
+          "content_type": "application/pdf",
+          "bytes": 1545813
+        }
+      ],
+      "raw_path": "corpus/raw/D/D1/source.pdf",
+      "sha256": "212980f45dca5d588eec218fe39076536f112ffe1dee7053cde28f4da3e94c0c",
+      "final_url": "https://arxiv.org/pdf/2503.18460",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "ModiGen: A Large Language Model-Based Workflow for Multi-Task Modelica Code Generation",
+        "author": "Jiahui Xiang; Tong Ye; Peiyu Liu; Yinan Zhang; Wenhai Wang",
+        "subject": "-  Software and its engineering  ->  Automatic programming.Domain specific languages.-  Computing methodologies  ->  Natural language generation.Model development and analysis.",
+        "keywords": "Model Generation, Modelica, Large Language Models, Retrieval-Augmented Generation, Physical Consistency",
+        "creator": "arXiv GenPDF (tex2pdf:0d14211)",
+        "producer": "pikepdf 8.15.1",
+        "creationDate": "D:20260915010721+00'00'",
+        "modDate": "D:20260915010721+00'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 12,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D1/source.txt",
+      "text_sha256": "b444eace0c8ebe86d20edea1806144b9511b6f6f90f64d4dd48bd8addad823d5",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D1/v1.receipt.json",
+      "source_id": "D1",
+      "url": "https://arxiv.org/pdf/2503.18460v1",
+      "retrieved_at": "2026-09-21T03:40:20.420507+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2503.18460v1",
+          "content_type": "application/pdf",
+          "bytes": 2118373
+        }
+      ],
+      "raw_path": "corpus/raw/D/D1/v1.pdf",
+      "sha256": "0bfeff3dc84cbd39af9e63654d134f5a3d11364e48e01880b4909e6485289b08",
+      "final_url": "https://arxiv.org/pdf/2503.18460v1",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "ModiGen: A Large Language Model-Based Workflow for Multi-Task Modelica Code Generation",
+        "author": "",
+        "subject": "-  Computing methodologies  ->  Natural language generation.Simulation languages.",
+        "keywords": "",
+        "creator": "LaTeX with acmart 2024/10/19 v2.10 Typesetting articles for the Association for Computing Machinery and hyperref 2023-04-22 v7.00x Hypertext links for LaTeX",
+        "producer": "pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) kpathsea version 6.3.5",
+        "creationDate": "D:20250325012945Z",
+        "modDate": "D:20250325012945Z",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 12,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D1/v1.txt",
+      "text_sha256": "e494cc607fe6e9410d6b8e6c746e042f23205a486b249b139d17235fbc293779",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D1/v2-pinned.receipt.json",
+      "source_id": "D1",
+      "url": "https://arxiv.org/pdf/2503.18460v2",
+      "retrieved_at": "2026-09-21T03:41:28.485140+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2503.18460v2",
+          "content_type": "application/pdf",
+          "bytes": 1545813
+        }
+      ],
+      "raw_path": "corpus/raw/D/D1/v2-pinned.pdf",
+      "sha256": "212980f45dca5d588eec218fe39076536f112ffe1dee7053cde28f4da3e94c0c",
+      "final_url": "https://arxiv.org/pdf/2503.18460v2",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "ModiGen: A Large Language Model-Based Workflow for Multi-Task Modelica Code Generation",
+        "author": "Jiahui Xiang; Tong Ye; Peiyu Liu; Yinan Zhang; Wenhai Wang",
+        "subject": "-  Software and its engineering  ->  Automatic programming.Domain specific languages.-  Computing methodologies  ->  Natural language generation.Model development and analysis.",
+        "keywords": "Model Generation, Modelica, Large Language Models, Retrieval-Augmented Generation, Physical Consistency",
+        "creator": "arXiv GenPDF (tex2pdf:0d14211)",
+        "producer": "pikepdf 8.15.1",
+        "creationDate": "D:20260915010721+00'00'",
+        "modDate": "D:20260915010721+00'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 12,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D1/v2-pinned.txt",
+      "text_sha256": "b444eace0c8ebe86d20edea1806144b9511b6f6f90f64d4dd48bd8addad823d5",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D2/metadata.receipt.json",
+      "source_id": "D2",
+      "url": "https://arxiv.org/abs/2509.14623",
+      "retrieved_at": "2026-09-21T03:38:07.836428+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2509.14623",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 44696
+        }
+      ],
+      "text_path": "corpus/raw/D/D2/metadata.md",
+      "text_sha256": "4217f2228b4e278767ad086ca01a174ed4eb59dee3d14e96cb827e422e63c58c",
+      "status": "extracted",
+      "raw_path": "corpus/raw/D/D2/metadata.html",
+      "sha256": "72afaec83eac860c25042a971865effe970dd0cc4cdf02f23066eb6dd6d7af39",
+      "final_url": "https://arxiv.org/abs/2509.14623"
+    },
+    {
+      "path": "corpus/raw/D/D2/source.receipt.json",
+      "source_id": "D2",
+      "url": "https://arxiv.org/pdf/2509.14623",
+      "retrieved_at": "2026-09-21T03:37:30.026880+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2509.14623",
+          "content_type": "application/pdf",
+          "bytes": 1255192
+        }
+      ],
+      "raw_path": "corpus/raw/D/D2/source.pdf",
+      "sha256": "f8636d499d8afe3de8dfe908d75456b6eadeb648ae3b162117484e84cfe09f9e",
+      "final_url": "https://arxiv.org/pdf/2509.14623",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "",
+        "author": "Patel, Viral K.",
+        "subject": "",
+        "keywords": "",
+        "creator": "Microsoft® Word for Microsoft 365",
+        "producer": "Microsoft® Word for Microsoft 365",
+        "creationDate": "D:20250917220354-07'00'",
+        "modDate": "D:20250917220354-07'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 28,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D2/source.txt",
+      "text_sha256": "aac03ebc0f700c61c7ca71159650e81cbe20717255738a4eebcf1bb44a391d5e",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D3/metadata.receipt.json",
+      "source_id": "D3",
+      "url": "https://arxiv.org/abs/2503.17004",
+      "retrieved_at": "2026-09-21T03:38:07.836963+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2503.17004",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 40874
+        }
+      ],
+      "text_path": "corpus/raw/D/D3/metadata.md",
+      "text_sha256": "43cc84b02e5d8ac837a568158daecff65e470fe83f57296f61fc777297197952",
+      "status": "extracted",
+      "raw_path": "corpus/raw/D/D3/metadata.html",
+      "sha256": "2c41db8f9d92cfe4528771c86348758d446c6ae497eb269111fdf58fe6bfc2e0",
+      "final_url": "https://arxiv.org/abs/2503.17004"
+    },
+    {
+      "path": "corpus/raw/D/D3/source.receipt.json",
+      "source_id": "D3",
+      "url": "https://arxiv.org/pdf/2503.17004",
+      "retrieved_at": "2026-09-21T03:37:30.026725+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2503.17004",
+          "content_type": "application/pdf",
+          "bytes": 237068
+        }
+      ],
+      "raw_path": "corpus/raw/D/D3/source.pdf",
+      "sha256": "551bdb1826807f5f5161f8c9c982152a60f6c1bbc8e66997b029c3ce1e8906dd",
+      "final_url": "https://arxiv.org/pdf/2503.17004",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "pdfTeX-1.40.25",
+        "creationDate": "D:20250324003901Z",
+        "modDate": "D:20250324003901Z",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 6,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D3/source.txt",
+      "text_sha256": "2c6094c6544bab062c50bc8fd6e6d2c8daa368d78d4fd3b711bc0b0567570d18",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D4/crossref.receipt.json",
+      "source_id": "D4",
+      "url": "https://api.crossref.org/works/10.2139/ssrn.5564442",
+      "retrieved_at": "2026-09-21T03:38:32.364044+00:00",
+      "kind": "json",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://api.crossref.org/works/10.2139/ssrn.5564442",
+          "content_type": "application/json",
+          "bytes": 2018
+        }
+      ],
+      "raw_path": "corpus/raw/D/D4/crossref.json",
+      "sha256": "4ebc285757906a98b6f932ad396ded7b76fc7cfee0daa9faebffe03c202f383a",
+      "final_url": "https://api.crossref.org/works/10.2139/ssrn.5564442",
+      "status": "downloaded"
+    },
+    {
+      "path": "corpus/raw/D/D4/institution.receipt.json",
+      "source_id": "D4",
+      "url": "https://researchportal.uc3m.es/display/act577979",
+      "retrieved_at": "2026-09-21T03:39:09.356424+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://researchportal.uc3m.es/display/act577979",
+          "content_type": "text/html;charset=UTF-8",
+          "bytes": 12119
+        },
+        {
+          "method": "httpx/extraction",
+          "error": "ValueError: No accessible substantive HTML content"
+        }
+      ],
+      "raw_path": "corpus/raw/D/D4/institution.html",
+      "sha256": "f9030dffdcc21c5123a7493e072fd46b33fcfdb6e455fa4fc528d26aa3b1d74d",
+      "final_url": "https://researchportal.uc3m.es/display/act577979",
+      "status": "failed"
+    },
+    {
+      "path": "corpus/raw/D/D4/source.receipt.json",
+      "source_id": "D4",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5564442",
+      "retrieved_at": "2026-09-21T03:37:30.454340+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 1,
+          "stderr": "Error: Failed to fetch: 403 \n"
+        },
+        {
+          "method": "httpx",
+          "http_status": 403,
+          "final_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5564442",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 896435
+        }
+      ],
+      "status": "blocked",
+      "sha256": null
+    },
+    {
+      "path": "corpus/raw/D/D5/metadata.receipt.json",
+      "source_id": "D5",
+      "url": "https://arxiv.org/abs/2602.05883",
+      "retrieved_at": "2026-09-21T03:38:07.960325+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/abs/2602.05883",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 41698
+        }
+      ],
+      "text_path": "corpus/raw/D/D5/metadata.md",
+      "text_sha256": "4db08ea404cb6398a775e7c9eb0610d39f4b3b52b314cb7305f1d0ee13b32d84",
+      "status": "extracted",
+      "raw_path": "corpus/raw/D/D5/metadata.html",
+      "sha256": "fc3efb02b006ea54dd0037cdef79e9ed9b3d6ddd58e45cadbea590a44192e9f2",
+      "final_url": "https://arxiv.org/abs/2602.05883"
+    },
+    {
+      "path": "corpus/raw/D/D5/source.receipt.json",
+      "source_id": "D5",
+      "url": "https://arxiv.org/pdf/2602.05883",
+      "retrieved_at": "2026-09-21T03:37:30.027163+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2602.05883",
+          "content_type": "application/pdf",
+          "bytes": 3965356
+        }
+      ],
+      "raw_path": "corpus/raw/D/D5/source.pdf",
+      "sha256": "87f13d41ae044ebbfc29d8dadf852894b82748f70ea940287294890b25d1e10d",
+      "final_url": "https://arxiv.org/pdf/2602.05883",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "A Guide to Large Language Models in Modeling and Simulation: From Core Techniques to Critical Challenges",
+        "author": "Philippe J. Giabbanelli",
+        "subject": "",
+        "keywords": "",
+        "creator": "arXiv GenPDF (tex2pdf:57610bf)",
+        "producer": "pikepdf 8.15.1",
+        "creationDate": "",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 49,
+      "empty_pages": [],
+      "text_path": "corpus/raw/D/D5/source.txt",
+      "text_sha256": "aaebf03c10595b0cbc46a2275d49e6c7474c16d3a319a5f2ef81f8473d2f8781",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/D/D6/source.receipt.json",
+      "source_id": "D6",
+      "url": "https://www.modelon.com/blog/from-intent-to-insight-ai-driven-physics-based-modeling-with-modelica/",
+      "retrieved_at": "2026-09-21T03:37:30.639033+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://www.modelon.com/blog/from-intent-to-insight-ai-driven-physics-based-modeling-with-modelica/",
+          "content_type": "text/html; charset=UTF-8",
+          "bytes": 236498
+        }
+      ],
+      "text_path": "corpus/raw/D/D6/source.md",
+      "text_sha256": "aa56e0510bf9c4663414b754c8d07897240685a96d4b8c49c68d3a287d3e03ab",
+      "status": "extracted",
+      "raw_path": "corpus/raw/D/D6/source.html",
+      "sha256": "abacbaf865b70836455542158c028330da1cd44755e713e93632f07e9c19685b",
+      "final_url": "https://www.modelon.com/blog/from-intent-to-insight-ai-driven-physics-based-modeling-with-modelica/"
+    },
+    {
+      "path": "corpus/raw/E/E-OmniPES/crossref.receipt.json",
+      "source_id": "E-OmniPES",
+      "url": "https://api.crossref.org/works/10.1109/ACCESS.2025.3553782",
+      "retrieved_at": "2026-09-21T03:38:32.364822+00:00",
+      "kind": "json",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 429,
+          "final_url": "https://api.crossref.org/works/10.1109/ACCESS.2025.3553782",
+          "content_type": null,
+          "bytes": 0
+        }
+      ],
+      "status": "blocked",
+      "sha256": null
+    },
+    {
+      "path": "corpus/raw/E/E-OmniPES/source.receipt.json",
+      "source_id": "E-OmniPES",
+      "url": "https://github.com/marcelotomim/OmniPES",
+      "retrieved_at": "2026-09-21T03:37:32.957946+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://github.com/marcelotomim/OmniPES",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 533746
+        }
+      ],
+      "text_path": "corpus/raw/E/E-OmniPES/source.md",
+      "text_sha256": "abd11f231fb0ddf5ec8740bcd930f3f23e117e88e5964321c791b69c1cd1a722",
+      "status": "extracted",
+      "raw_path": "corpus/raw/E/E-OmniPES/source.html",
+      "sha256": "f77c25684819fe1cdabff5338c3a1b56fddc66433264a423d2b737057c181a7e",
+      "final_url": "https://github.com/marcelotomim/OmniPES"
+    },
+    {
+      "path": "corpus/raw/E/E-OpenIPSL/source.receipt.json",
+      "source_id": "E-OpenIPSL",
+      "url": "https://github.com/OpenIPSL/OpenIPSL",
+      "retrieved_at": "2026-09-21T03:37:31.427206+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://github.com/OpenIPSL/OpenIPSL",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 301163
+        }
+      ],
+      "text_path": "corpus/raw/E/E-OpenIPSL/source.md",
+      "text_sha256": "2a4ed8cfebcea3eee6002407134830c039d2340bab553c5928358a644f36c263",
+      "status": "extracted",
+      "raw_path": "corpus/raw/E/E-OpenIPSL/source.html",
+      "sha256": "4fdb3fa4a7f3a4c0430f3b4867485855067f931a004ec1191c35ca1cf37f0438",
+      "final_url": "https://github.com/OpenIPSL/OpenIPSL"
+    },
+    {
+      "path": "corpus/raw/E/E-PowerGrids/source.receipt.json",
+      "source_id": "E-PowerGrids",
+      "url": "https://github.com/PowerGrids/PowerGrids",
+      "retrieved_at": "2026-09-21T03:37:31.395125+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://github.com/PowerGrids/PowerGrids",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 284411
+        }
+      ],
+      "text_path": "corpus/raw/E/E-PowerGrids/source.md",
+      "text_sha256": "50303f52eac4460915cc6caf863cd81a099d9b7290d99c93c3aae3bada5c85a8",
+      "status": "extracted",
+      "raw_path": "corpus/raw/E/E-PowerGrids/source.html",
+      "sha256": "15a49b826b135a0d3a07f03a58cce83482a5b4f1b8140966079e13ef9e6df244",
+      "final_url": "https://github.com/PowerGrids/PowerGrids"
+    },
+    {
+      "path": "corpus/raw/E/E1/source.receipt.json",
+      "source_id": "E1",
+      "url": "https://arxiv.org/pdf/2112.00862",
+      "retrieved_at": "2026-09-21T03:37:30.227271+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://arxiv.org/pdf/2112.00862",
+          "content_type": "application/pdf",
+          "bytes": 1149577
+        }
+      ],
+      "raw_path": "corpus/raw/E/E1/source.pdf",
+      "sha256": "8897f87ff6ee62b1282d2d29e35f1e6d5190047ae17db110a2712d831c8dba88",
+      "final_url": "https://arxiv.org/pdf/2112.00862",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "pdfTeX-1.40.21",
+        "creationDate": "D:20211203014828Z",
+        "modDate": "D:20211203014828Z",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 7,
+      "empty_pages": [],
+      "text_path": "corpus/raw/E/E1/source.txt",
+      "text_sha256": "2c8515dbccc51563ebd1a8ffa44442b77d7bfba4f124df8c78b888484506bd99",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/E/E2/crossref.receipt.json",
+      "source_id": "E2",
+      "url": "https://api.crossref.org/works/10.3390/electronics13091614",
+      "retrieved_at": "2026-09-21T03:38:32.364527+00:00",
+      "kind": "json",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://api.crossref.org/works/10.3390/electronics13091614",
+          "content_type": "application/json",
+          "bytes": 15036
+        }
+      ],
+      "raw_path": "corpus/raw/E/E2/crossref.json",
+      "sha256": "995eb40c3e0ca68bd96cab30452d6f0c9d45c7615f9cfac145418032e82aaea4",
+      "final_url": "https://api.crossref.org/works/10.3390/electronics13091614",
+      "status": "downloaded"
+    },
+    {
+      "path": "corpus/raw/E/E2/publisher-pdf.receipt.json",
+      "source_id": "E2",
+      "url": "https://www.mdpi.com/2079-9292/13/9/1614/pdf",
+      "retrieved_at": "2026-09-21T03:38:07.836165+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 403,
+          "final_url": "https://www.mdpi.com/2079-9292/13/9/1614/pdf",
+          "content_type": "text/html",
+          "bytes": 409
+        }
+      ],
+      "status": "blocked",
+      "sha256": null
+    },
+    {
+      "path": "corpus/raw/E/E2/source.receipt.json",
+      "source_id": "E2",
+      "url": "https://www.mdpi.com/2079-9292/13/9/1614",
+      "retrieved_at": "2026-09-21T03:37:30.726822+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 1,
+          "stderr": "Error: Failed to fetch: 403 \n"
+        },
+        {
+          "method": "httpx",
+          "http_status": 403,
+          "final_url": "https://www.mdpi.com/2079-9292/13/9/1614",
+          "content_type": "text/html",
+          "bytes": 401
+        }
+      ],
+      "status": "blocked",
+      "sha256": null
+    },
+    {
+      "path": "corpus/raw/E/E2/sourcepdf.receipt.json",
+      "source_id": "E2",
+      "url": "https://mdpi-res.com/d_attachment/electronics/electronics-13-01614/article_deploy/electronics-13-01614-v3.pdf",
+      "retrieved_at": "2026-09-21T03:39:09.355887+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://mdpi-res.com/d_attachment/electronics/electronics-13-01614/article_deploy/electronics-13-01614-v3.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1095645
+        }
+      ],
+      "raw_path": "corpus/raw/E/E2/sourcepdf.pdf",
+      "sha256": "68d3cd8d753d8b73d30692f6ab2f52ef65b0e1fad6952b6a880eabc7d8cfabb0",
+      "final_url": "https://mdpi-res.com/d_attachment/electronics/electronics-13-01614/article_deploy/electronics-13-01614-v3.pdf",
+      "pdf_metadata": {
+        "format": "PDF 1.7",
+        "title": "Modeling of Induction Motors and Variable Speed Drives for Multi-Domain System Simulations Using Modelica and the OpenIPSL Library",
+        "author": "Fernando Fachini, Marcelo de Castro, Tetiana Bogodorova, and Luigi Vanfretti",
+        "subject": "This paper introduces an innovative method for characterizing, implementing, and validating both three-phase and single-phase induction motor models, accompanied by a variable speed drive model. The primary goal is to investigate interactions between the electrical power grid and other dynamic domains (e.g., thermofluidic) that impact motor/load drive behavior. Our approach involves establishing a mechanical interface based on a physically meaningful equation linking motor torque/speed to the electrical model in the phasor domain. This allows seamless integration of diverse domain subsystems into a unified multi-domain model using Modelica v4.0.0 and the OpenIPSL library v3.0.1, overcoming co-simulation limitations. The proposed model, which requires only one Modelica-compliant tool for simulation, introduces additional dynamics through the mechanical interface, enabling explicit simulation of load disturbances based on constitutive physics. This deepens our understanding of dynamic interactions between the electrical power domain and other subsystems connected through the motor. We detail the modeled components using mathematical equations and textual descriptions, emphasizing the Modelica modeling approach. Simulation examples validate the implementation, demonstrating the multi-domain modeling capabilities of the newly developed components.",
+        "keywords": "induction motor models; variable speed drive model; Modelica; OpenIPSL; multi-domain models",
+        "creator": "LaTeX with hyperref",
+        "producer": "pdfTeX-1.40.25",
+        "creationDate": "D:20240510125053+02'00'",
+        "modDate": "D:20240510132834+02'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 35,
+      "empty_pages": [],
+      "text_path": "corpus/raw/E/E2/sourcepdf.txt",
+      "text_sha256": "1f875bf573a5eeba5044d60ad6865a9625924fdf28ef5d1f3161c2c22724ff06",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/E/E3/source.receipt.json",
+      "source_id": "E3",
+      "url": "https://2014.international.conference.modelica.org/proceedings/html/submissions/ECP14096515_FrankeWiesmann.pdf",
+      "retrieved_at": "2026-09-21T03:37:30.386684+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://2014.international.conference.modelica.org/proceedings/html/submissions/ECP14096515_FrankeWiesmann.pdf",
+          "content_type": "application/pdf",
+          "bytes": 458797
+        }
+      ],
+      "raw_path": "corpus/raw/E/E3/source.pdf",
+      "sha256": "2746a63c9865bd1338fac0f9dc00183e875896bd6e96a7c65af712dec314b825",
+      "final_url": "https://2014.international.conference.modelica.org/proceedings/html/submissions/ECP14096515_FrankeWiesmann.pdf",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "pdftk 2.02 - www.pdftk.com",
+        "producer": "itext-paulo-155 (itextpdf.sf.net-lowagie.com)",
+        "creationDate": "D:20140321130554Z",
+        "modDate": "D:20140321130554Z",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 8,
+      "empty_pages": [],
+      "text_path": "corpus/raw/E/E3/source.txt",
+      "text_sha256": "959f68da93604c7de4a260fd36ef90bf4bc6369614678e462803e1b8e8cb4547",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/E/E4/source.receipt.json",
+      "source_id": "E4",
+      "url": "https://modelica.org/events/Conference2005/online_proceedings/Session7/Session7a2.pdf",
+      "retrieved_at": "2026-09-21T03:41:28.484664+00:00",
+      "kind": "pdf",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://modelica.org/events/Conference2005/online_proceedings/Session7/Session7a2.pdf",
+          "content_type": "application/pdf",
+          "bytes": 370700
+        }
+      ],
+      "raw_path": "corpus/raw/E/E4/source.pdf",
+      "sha256": "266e5fe04fed598266ad0c93c35518d26b2142bd0c40157fa2c79737020532f8",
+      "final_url": "https://modelica.org/events/Conference2005/online_proceedings/Session7/Session7a2.pdf",
+      "pdf_metadata": {
+        "format": "PDF 1.5",
+        "title": "",
+        "author": "",
+        "subject": "",
+        "keywords": "",
+        "creator": "TeX",
+        "producer": "MiKTeX pdfTeX-1.20a",
+        "creationDate": "D:20050223144044+01'00'",
+        "modDate": "D:20050330133303+02'00'",
+        "trapped": "",
+        "encryption": null
+      },
+      "pages": 11,
+      "empty_pages": [],
+      "text_path": "corpus/raw/E/E4/source.txt",
+      "text_sha256": "c1d42e86b1650237ce9a46f8b4bf54325ea95279702db1304ba793a8d46af44e",
+      "status": "extracted"
+    },
+    {
+      "path": "corpus/raw/F/F-179/source.receipt.json",
+      "source_id": "F-179",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/179",
+      "retrieved_at": "2026-09-21T03:40:50.751457+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/179",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 17794
+        }
+      ],
+      "text_path": "corpus/raw/F/F-179/source.md",
+      "text_sha256": "f5973d5d999da474bfe2c732af2467ae63fa4ee646e856f236032720333de125",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-179/source.html",
+      "sha256": "b3f788b2b1d9f61063e9b8dcc1e63f15fe3bd970f9ef6c70ba1d08ecf5864e13",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/179"
+    },
+    {
+      "path": "corpus/raw/F/F-181/source.receipt.json",
+      "source_id": "F-181",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/181",
+      "retrieved_at": "2026-09-21T03:40:50.755260+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/181",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 17194
+        }
+      ],
+      "text_path": "corpus/raw/F/F-181/source.md",
+      "text_sha256": "1bd95517a94a45d250ff1cea2cc24c7d8a778a6678e327622b66483d3d661db4",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-181/source.html",
+      "sha256": "86b0bec9811c75af0046ff4e7d0845d64e71b643b8f830bb6a347261bbffed7b",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/181"
+    },
+    {
+      "path": "corpus/raw/F/F-186/source.receipt.json",
+      "source_id": "F-186",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/186",
+      "retrieved_at": "2026-09-21T03:40:50.762317+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/186",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 16902
+        }
+      ],
+      "text_path": "corpus/raw/F/F-186/source.md",
+      "text_sha256": "2ec5bc4af7f1ac5c6b1c8e1f7786fef2667638e8298dc3401f0e0199b864e606",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-186/source.html",
+      "sha256": "c86cec9f1ea737694373945b4e636aa47b1d49c9c7e042d22d25589a64061fdf",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/186"
+    },
+    {
+      "path": "corpus/raw/F/F-217/source.receipt.json",
+      "source_id": "F-217",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/217",
+      "retrieved_at": "2026-09-21T03:40:52.006008+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/217",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 15978
+        }
+      ],
+      "text_path": "corpus/raw/F/F-217/source.md",
+      "text_sha256": "e7fe103cc622053fa886c5656fae7f4c9540ab232c4e5a1e45d76615cbc1c6ac",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-217/source.html",
+      "sha256": "edbd300300b60d21d98e470bc524ae6def2bbf3a08c3f2f6851257644c29dd80",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/217"
+    },
+    {
+      "path": "corpus/raw/F/F-937/source.receipt.json",
+      "source_id": "F-937",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/937",
+      "retrieved_at": "2026-09-21T03:40:49.117127+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/937",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 17231
+        }
+      ],
+      "text_path": "corpus/raw/F/F-937/source.md",
+      "text_sha256": "e3cae3978a32bdcf9d9f99a943808fbeb4d0b15e9a1b153271cc5b2c59531300",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-937/source.html",
+      "sha256": "37e0d93d65ca3f7a872948eac2e29c0ad5e60f67d62b3faf5f68f3bfae3db355",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/937"
+    },
+    {
+      "path": "corpus/raw/F/F-947/source.receipt.json",
+      "source_id": "F-947",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/947",
+      "retrieved_at": "2026-09-21T03:40:49.117384+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/947",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 18120
+        }
+      ],
+      "text_path": "corpus/raw/F/F-947/source.md",
+      "text_sha256": "0f48572ac90728759ba11e28fbb93df4219f44aa3f3039aec5bd2075dbcc3a10",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-947/source.html",
+      "sha256": "01f0d2b20246aa30050a2a5b6c97d869055cc4c67d1db1c51a04d40a73ab1a7d",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/947"
+    },
+    {
+      "path": "corpus/raw/F/F-958/source.receipt.json",
+      "source_id": "F-958",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/958",
+      "retrieved_at": "2026-09-21T03:40:49.117604+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/958",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 16618
+        }
+      ],
+      "text_path": "corpus/raw/F/F-958/source.md",
+      "text_sha256": "cff34b7c594ba06a6fa4d58c92fdee605fcd82d64649850181ad3c368027c4c7",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-958/source.html",
+      "sha256": "012652d4dc5bda351af8a56e35978265456c02c9e49aade7c7f7bececccebee4",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/958"
+    },
+    {
+      "path": "corpus/raw/F/F-959/source.receipt.json",
+      "source_id": "F-959",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/959",
+      "retrieved_at": "2026-09-21T03:40:49.117816+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/959",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 16904
+        }
+      ],
+      "text_path": "corpus/raw/F/F-959/source.md",
+      "text_sha256": "a4ed46ed13d44a2551ce514853e1b9569beb4202f7b835af41ced7ceb9794844",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-959/source.html",
+      "sha256": "1e88dc49ab6d66c59a2fd6873a3d8c84b64bc89bb9d4cd906d67484ed7ce62dc",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/959"
+    },
+    {
+      "path": "corpus/raw/F/F-985/source.receipt.json",
+      "source_id": "F-985",
+      "url": "https://ecp.ep.liu.se/index.php/modelica/article/view/985",
+      "retrieved_at": "2026-09-21T03:40:50.639055+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/985",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 15528
+        }
+      ],
+      "text_path": "corpus/raw/F/F-985/source.md",
+      "text_sha256": "aec5783ccdd37c62b92701a627bbbbc2fa96109efb58c7f407f65732645cef5f",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-985/source.html",
+      "sha256": "9f6e0ed832417ae4f0ab228f9d60f83dd661a9de446be5f73098204da9dfb231",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/article/view/985"
+    },
+    {
+      "path": "corpus/raw/F/F-OMPython/crossref.receipt.json",
+      "source_id": "F-OMPython",
+      "url": "https://api.crossref.org/works/10.3384/ecp12076537",
+      "retrieved_at": "2026-09-21T03:40:52.247294+00:00",
+      "kind": "json",
+      "attempts": [
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://api.crossref.org/works/10.3384/ecp12076537",
+          "content_type": "application/json",
+          "bytes": 2528
+        }
+      ],
+      "raw_path": "corpus/raw/F/F-OMPython/crossref.json",
+      "sha256": "d27279eafc900b0e64f0e8d77fea9df755defa94510dfe826de4feac8cc41c7d",
+      "final_url": "https://api.crossref.org/works/10.3384/ecp12076537",
+      "status": "downloaded"
+    },
+    {
+      "path": "corpus/raw/F/F-index/source.receipt.json",
+      "source_id": "F-index",
+      "url": "https://modelica.org/publications/proceedings/",
+      "retrieved_at": "2026-09-21T03:37:31.012333+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://modelica.org/publications/proceedings/",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 12749
+        }
+      ],
+      "text_path": "corpus/raw/F/F-index/source.md",
+      "text_sha256": "efbfc534971a5f831c10866b66ab8b606747415cb484758f5589c1ba24387513",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F-index/source.html",
+      "sha256": "7321354bf20ba2e78171dfb3f678adc886b1bc1a043f66684730843353e4c9ef",
+      "final_url": "https://modelica.org/publications/proceedings/"
+    },
+    {
+      "path": "corpus/raw/F/F2014/sessions.receipt.json",
+      "source_id": "F2014",
+      "url": "https://2014.international.conference.modelica.org/proceedings/html/sessions/index.html",
+      "retrieved_at": "2026-09-21T03:40:20.421233+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://2014.international.conference.modelica.org/proceedings/html/sessions/index.html",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 6676
+        }
+      ],
+      "text_path": "corpus/raw/F/F2014/sessions.md",
+      "text_sha256": "44addf2f0deabe9327466e8ebc4925871d95211af40f862d7ed2cc89a62c95ed",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F2014/sessions.html",
+      "sha256": "580df0eb2fa1217f442bc1e2a880d9737a5b334ae667486c048a4b6e5d0154e7",
+      "final_url": "https://2014.international.conference.modelica.org/proceedings/html/sessions/index.html"
+    },
+    {
+      "path": "corpus/raw/F/F2014/source.receipt.json",
+      "source_id": "F2014",
+      "url": "https://2014.international.conference.modelica.org/proceedings/html/index.html",
+      "retrieved_at": "2026-09-21T03:38:08.249338+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://2014.international.conference.modelica.org/proceedings/html/index.html",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 7943
+        }
+      ],
+      "text_path": "corpus/raw/F/F2014/source.md",
+      "text_sha256": "445c9763f4b5b0eb3e8591a3bf41ea39afbcd13b8a29d335a9b95653a5cb0a39",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F2014/source.html",
+      "sha256": "a7064b13cc51c52bd53c916dcd7f3bdcea5826f36f61f27b19e1e9e60416e447",
+      "final_url": "https://2014.international.conference.modelica.org/proceedings/html/index.html"
+    },
+    {
+      "path": "corpus/raw/F/F2021/source.receipt.json",
+      "source_id": "F2021",
+      "url": "https://doi.org/10.3384/ecp21181",
+      "retrieved_at": "2026-09-21T03:38:08.252026+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/issue/view/37",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 63835
+        }
+      ],
+      "text_path": "corpus/raw/F/F2021/source.md",
+      "text_sha256": "d25e814a839e60aa4336060d21ed930b5de05289821eb408a316658bca6d2492",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F2021/source.html",
+      "sha256": "f45551ac8ef8eed1da28ada8a51a744f8f4f080a476310f923406d9cce8fa45b",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/issue/view/37"
+    },
+    {
+      "path": "corpus/raw/F/F2023/source.receipt.json",
+      "source_id": "F2023",
+      "url": "https://doi.org/10.3384/ecp204",
+      "retrieved_at": "2026-09-21T03:38:08.229756+00:00",
+      "kind": "html",
+      "attempts": [
+        {
+          "method": "defuddle",
+          "returncode": 0,
+          "stderr": ""
+        },
+        {
+          "method": "httpx",
+          "http_status": 200,
+          "final_url": "https://ecp.ep.liu.se/index.php/modelica/issue/view/83",
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 73512
+        }
+      ],
+      "text_path": "corpus/raw/F/F2023/source.md",
+      "text_sha256": "b83b3fa7fa9c56efbf91658ee98c6b3edd98925c68467225d7fb13b77662d1da",
+      "status": "extracted",
+      "raw_path": "corpus/raw/F/F2023/source.html",
+      "sha256": "dd4bcd053c89356082490c425d2a31628a69755da4fda1ec533c3702d3ed9651",
+      "final_url": "https://ecp.ep.liu.se/index.php/modelica/issue/view/83"
+    }
+  ],
+  "chunk_file": "corpus/chunks/research.jsonl",
+  "chunk_file_sha256": "7c9e826dbd29b087fa7095d7a0a20c60c7837d7b0a9a2c7eddca93c802def651"
+}

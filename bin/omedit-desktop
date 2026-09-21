@@ -1,0 +1,71 @@
+#!/usr/bin/env python3
+"""Desktop-visible official OMEdit, using only a Wayland display socket."""
+import os
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+NAME = 'openmodelica-ai-omedit-desktop'
+IMAGE = 'sha256:7ab058f3381bb93f1a94a64643d766e80d3c1b155eb8d595fbe0a6864cd1972a'
+HEALTH = "import urllib.request; print(urllib.request.urlopen('http://127.0.0.1:3000/health',timeout=3).read().decode())"
+action = sys.argv[1] if len(sys.argv)>1 else 'start'
+if action == 'serve':
+    python = str(ROOT/'.venv/bin/python')
+    os.execv(python,[python,str(ROOT/'scripts/omedit_bridge.py'),'--desktop'])
+if action in ('status','logs','stop','health'):
+    commands = {
+        'status':['docker','inspect',NAME,'--format','{{.State.Status}} network={{.HostConfig.NetworkMode}} ports={{json .HostConfig.PortBindings}}'],
+        'logs':['docker','logs',NAME],
+        'stop':['docker','stop','--timeout','10',NAME],
+        'health':['docker','exec',NAME,'python3','-c',HEALTH],
+    }
+    sys.exit(subprocess.run(commands[action]).returncode)
+if action != 'start':
+    sys.exit('usage: omedit-desktop start|health|status|logs|stop|serve')
+state = subprocess.run(['docker','inspect',NAME,'--format','{{.State.Running}}'],capture_output=True,text=True)
+if state.returncode == 0:
+    if state.stdout.strip() != 'true':
+        subprocess.run(['docker','start',NAME],check=True,stdout=subprocess.DEVNULL)
+else:
+    host_runtime = Path(os.environ.get('XDG_RUNTIME_DIR',f'/run/user/{os.getuid()}'))
+    display = os.environ.get('WAYLAND_DISPLAY','wayland-1')
+    socket = Path(display) if display.startswith('/') else host_runtime/display
+    if not socket.is_socket():
+        candidates = [p for p in host_runtime.glob('wayland-*') if p.is_socket()]
+        if len(candidates) != 1:
+            sys.exit('Cannot identify one active Wayland display; existing native OMEdit was not changed')
+        socket = candidates[0]
+    for folder in ['artifacts/omedit-desktop','artifacts/desktop-models','runtime/omedit-desktop-home/.openmodelica','runtime/omedit-desktop-tmp','runtime/omedit-desktop-xdg']:
+        (ROOT/folder).mkdir(parents=True,exist_ok=True)
+    runtime = ROOT/'runtime/omedit-desktop-xdg'
+    runtime.chmod(0o700)
+    command = ['docker','run','-d','--init','--name',NAME,'--label','org.nathan.project=openmodelica-ai',
+        '--network','none','--cap-drop','ALL','--security-opt','no-new-privileges',
+        '--user',f'{os.getuid()}:{os.getgid()}','--cpus','2','--memory','3g','--pids-limit','256',
+        '--read-only','--tmpfs','/tmp:rw,nosuid,size=256m,mode=1777',
+        '-e',f'HOME={ROOT}/runtime/omedit-desktop-home','-e',f'TMPDIR={ROOT}/runtime/omedit-desktop-tmp',
+        '-e',f'XDG_RUNTIME_DIR={runtime}','-e','WAYLAND_DISPLAY=wayland-omedit',
+        '--mount',f'type=bind,src={ROOT},dst={ROOT},readonly',
+        '--mount',f'type=bind,src={ROOT}/runtime,dst={ROOT}/runtime',
+        '--mount',f'type=bind,src={ROOT}/artifacts,dst={ROOT}/artifacts',
+        '--mount',f'type=bind,src={socket},dst={runtime}/wayland-omedit,readonly',
+        '--mount',f'type=bind,src={ROOT}/runtime/home/.openmodelica,dst={ROOT}/runtime/omedit-desktop-home/.openmodelica,readonly',
+        '-w',str(ROOT/'artifacts/omedit-desktop'),IMAGE]
+    subprocess.run(command,check=True,stdout=subprocess.DEVNULL)
+deadline = time.monotonic()+60
+while time.monotonic()<deadline:
+    result = subprocess.run(['docker','exec',NAME,'python3','-c',HEALTH],capture_output=True,text=True,timeout=7)
+    if result.returncode == 0 and result.stdout.strip() == 'OK':
+        print('Visible OMEdit MCP OK; desktop Wayland window, network=none, no published ports')
+        break
+    alive = subprocess.run(['docker','inspect',NAME,'--format','{{.State.Running}}'],capture_output=True,text=True)
+    if alive.stdout.strip() != 'true':
+        break
+    time.sleep(0.5)
+else:
+    result = None
+if result is None or result.returncode != 0:
+    subprocess.run(['docker','logs',NAME])
+    sys.exit('Desktop OMEdit health failed; existing native window was not changed')

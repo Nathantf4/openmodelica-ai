@@ -1,0 +1,11 @@
+// Run from this folder. Opening this script in OMEdit does not execute it.
+loadModel(Modelica,{"4.1.0"},requireExactVersion=true);
+getErrorString();
+loadFile("model.mo");
+getErrorString();
+checkModel(SpeedPIDemo);
+getErrorString();
+simulate(SpeedPIDemo,startTime=0,stopTime=3,numberOfIntervals=3000,tolerance=1e-8,outputFormat="csv",fileNamePrefix="baseline",simflags="-override=k=0.6,Ti=0.08 -output=k,Ti");
+getErrorString();
+simulate(SpeedPIDemo,startTime=0,stopTime=3,numberOfIntervals=3000,tolerance=1e-8,outputFormat="csv",fileNamePrefix="retuned",simflags="-override=k=3,Ti=0.6 -output=k,Ti");
+getErrorString();
