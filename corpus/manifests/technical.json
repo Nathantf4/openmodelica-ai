@@ -1,6 +1,6 @@
 {
   "schema": "technical-corpus/v1",
-  "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+  "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
   "mls_version": "3.7",
   "mcp_version": "2025-11-25",
   "openmodelica_version": "1.27.1",
@@ -10,7 +10,7 @@
       "url": "https://specification.modelica.org/",
       "raw_path": "corpus/raw/A/MLS-release-index.html",
       "source_sha256": "0cf71d070be4870943ad0af774a66077c1f875a0cca4330795743d57e3911633",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00"
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00"
     },
     {
       "source_id": "A1",
@@ -20,7 +20,7 @@
       "source_sha256": "0763840f0f33fef53ca9010ea1e8f53d605987f733a1a93f931f3a5484cb6966",
       "extracted_path": "corpus/raw/A/MLS-3.7-class-predefined-types-and-declarations.html.txt",
       "extracted_sha256": "d6397f476593ada29c570b50aa2aa80f5a64370931447726d916f6dd90fa562e",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "class-predefined-types-and-declarations"
@@ -33,7 +33,7 @@
       "source_sha256": "04e6b36cd401fe69ba96a572125eb59b39d3342248dae0ac59e958468713034e",
       "extracted_path": "corpus/raw/A/MLS-3.7-scoping-name-lookup-and-flattening.html.txt",
       "extracted_sha256": "17c28882a61bdd6c177d1a1971723f962d833e3f606c37b8c55060e30212c09c",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "scoping-name-lookup-and-flattening"
@@ -46,7 +46,7 @@
       "source_sha256": "b1e93a44c0ea33e507a84838201de0944d7c86a1648825f5073fc6e083771334",
       "extracted_path": "corpus/raw/A/MLS-3.7-operators-and-expressions.html.txt",
       "extracted_sha256": "6caa96c52e66a6e0ac096d8897f9802882ea8cb1d95ab2e6262a9916217ebd47",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "operators-and-expressions"
@@ -59,7 +59,7 @@
       "source_sha256": "e8e17a850cc940e107a6f4155f959dbf599b8e3eb88619530532e842da1fa994",
       "extracted_path": "corpus/raw/A/MLS-3.7-equations.html.txt",
       "extracted_sha256": "e358d29d69bfeeceb4a4e664d474d25587bc1b4ff1e3bedbceb9bfb58c80ccb1",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "equations"
@@ -72,7 +72,7 @@
       "source_sha256": "a98e1c10ebe09d88f65fbfca17830fb5a2844c586ef2702b120d101f9afa8914",
       "extracted_path": "corpus/raw/A/MLS-3.7-connectors-and-connections.html.txt",
       "extracted_sha256": "754b95d306147d4615e26ccce2e967e2e0cc97186ebf9ae830f2f392d322d68c",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "connectors-and-connections"
@@ -85,7 +85,7 @@
       "source_sha256": "f35894c0ec7441f9d2f4406e9ba16f8dc2e561e08e47947c274e2fb0d0df1e21",
       "extracted_path": "corpus/raw/A/MLS-3.7-statements-and-algorithm-sections.html.txt",
       "extracted_sha256": "0e0a133d890d054bd22dc78a36241ada13907e354cb578ab2d883fa1fb42cc74",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "statements-and-algorithm-sections"
@@ -98,7 +98,7 @@
       "source_sha256": "4f047b25dc77a9ea45fa0fc14139055358045b772d8aa6ddd7f71e901032a2eb",
       "extracted_path": "corpus/raw/A/MLS-3.7-packages.html.txt",
       "extracted_sha256": "e503cd3500fd4f5f55a2614d42f27d163e1c7796d85bd11dbddaced0e5194bb6",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "packages"
@@ -111,7 +111,7 @@
       "source_sha256": "93f504162128112604914c602c8fcd6756cd270c98c6e3e338d4826365bf188d",
       "extracted_path": "corpus/raw/A/MLS-3.7-annotations.html.txt",
       "extracted_sha256": "be4b978244c3810ad5092d5cdeab7495a2cb2f9c6505479abc276709288d1f66",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Modelica Association specification; retain upstream copyright and license notices from the archived chapter. Local reference copy.",
       "version": "3.7",
       "chapter": "annotations"
@@ -124,7 +124,7 @@
       "source_sha256": "a196aa967fa3a8841a24887c58e943a8d6af6ed5dd106f6806cfe7505bc480b6",
       "extracted_path": "corpus/raw/C/C1-introduction.rst.txt",
       "extracted_sha256": "a196aa967fa3a8841a24887c58e943a8d6af6ed5dd106f6806cfe7505bc480b6",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -136,7 +136,7 @@
       "source_sha256": "7fd99a9ae9988e1e23457da2ba27185a55e2ad2a805af4752bd75b9cec0707fd",
       "extracted_path": "corpus/raw/C/C1-compiler.rst.txt",
       "extracted_sha256": "7fd99a9ae9988e1e23457da2ba27185a55e2ad2a805af4752bd75b9cec0707fd",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -148,7 +148,7 @@
       "source_sha256": "e1670741347a35b5b0f79be7db93609c228b85081ab30aa94384ae43ddaab3ff",
       "extracted_path": "corpus/raw/C/C1-solving.rst.txt",
       "extracted_sha256": "e1670741347a35b5b0f79be7db93609c228b85081ab30aa94384ae43ddaab3ff",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -160,7 +160,7 @@
       "source_sha256": "bb3f57854b6659687277453cbd296858b6659a62bf46d52eaffe8306d0e98550",
       "extracted_path": "corpus/raw/C/C1-fmitlm.rst.txt",
       "extracted_sha256": "bb3f57854b6659687277453cbd296858b6659a62bf46d52eaffe8306d0e98550",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -172,7 +172,7 @@
       "source_sha256": "097d32dbbf68698eea150ccaf1d685dd9a58b1275dae02ba2fe44e171e9d7e9d",
       "extracted_path": "corpus/raw/C/C1-omedit.rst.txt",
       "extracted_sha256": "097d32dbbf68698eea150ccaf1d685dd9a58b1275dae02ba2fe44e171e9d7e9d",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -184,7 +184,7 @@
       "source_sha256": "565c4a7625593ada4ce8ce8bf34470a355edb8066b382620221ffc341d26ae75",
       "extracted_path": "corpus/raw/C/C2-ompython.rst.txt",
       "extracted_sha256": "565c4a7625593ada4ce8ce8bf34470a355edb8066b382620221ffc341d26ae75",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -196,7 +196,7 @@
       "source_sha256": "20e85494c3529448f4498479c4ea18fdaa638728bd9f4c4ad82c4dde2fd243ad",
       "extracted_path": "corpus/raw/C/C3-scripting_api.rst.txt",
       "extracted_sha256": "20e85494c3529448f4498479c4ea18fdaa638728bd9f4c4ad82c4dde2fd243ad",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -208,7 +208,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-loadModel.mo.txt",
       "extracted_sha256": "51eb96ef4f7080766a9335fb25a5d2f1653510c5f158e11b9eab3a7309582060",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -220,7 +220,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-loadFile.mo.txt",
       "extracted_sha256": "5697ea2cbce5e401d091a80059d30ca488f5e9edeb2aa34e13dd96de7a413468",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -232,7 +232,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-checkModel.mo.txt",
       "extracted_sha256": "fcce47d9e527661f3ec01e0f5d83f2e86db153d8ff16efdc79b5cb3de4545e0d",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -244,7 +244,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-simulate.mo.txt",
       "extracted_sha256": "d6af9ec51df162ca53913fc7741e30048386528d839a0198c4f3dd34f37be10a",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -256,7 +256,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getErrorString.mo.txt",
       "extracted_sha256": "925fa090072622c7e7c697ceff19c9ca5751f241f1135151c022d4e3c6336780",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -268,7 +268,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getClassNames.mo.txt",
       "extracted_sha256": "33a83f093f0d58074a2bee0f4990e5d4d7710f2bd58acbb8a79716876f7e2036",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -280,7 +280,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getClassInformation.mo.txt",
       "extracted_sha256": "1de7cb7b68bcd727ff4a3d97f72a74be496032c259ddc82623e80125db1667ef",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -292,7 +292,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getComponents.mo.txt",
       "extracted_sha256": "5b490fe4b684591ee7a72fb73e31313648fe47d829591a057893254d14798fb8",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -304,7 +304,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getInheritedClasses.mo.txt",
       "extracted_sha256": "6f512f6b3e3ef1075333b248e2400ec200c006764137421314a1adee6d2891fe",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -316,7 +316,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-getDocumentationAnnotation.mo.txt",
       "extracted_sha256": "110cf33ddb46fc8a69847715597c545a18bd1d4b29a27b7b7c0df4549d65b8a7",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -328,7 +328,7 @@
       "source_sha256": "1a7888815670ed47038ad4aaf9584785121a3435c2f39eaf5dcd2297e11affb4",
       "extracted_path": "corpus/raw/C/C3-api-existClass.mo.txt",
       "extracted_sha256": "d2b2752f9bca855ea38bd7914b5072fcdfc79e7a32f34276ab64604866d5a469",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -340,7 +340,7 @@
       "source_sha256": "52cf463edf56e2e59e5df7059905fc145bf6340ce802764ad88e947d25b39a9f",
       "extracted_path": "corpus/raw/C/C4-openmodelica.bib.txt",
       "extracted_sha256": "52cf463edf56e2e59e5df7059905fc145bf6340ce802764ad88e947d25b39a9f",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -352,7 +352,7 @@
       "source_sha256": "949fbbab963bd74e51137ec4bf4ceb96bf39f28e900a0e2de88ff645028fc399",
       "extracted_path": "corpus/raw/C/C5-release-v1.27.0.json.txt",
       "extracted_sha256": "39099ab56e1195fed452774c2c6306935a2070c17a7742db02277bea3291cb62",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Public upstream release notes; local reference copy.",
       "version": "1.27.0"
     },
@@ -364,7 +364,7 @@
       "source_sha256": "2dd3f4632f6413ac95b18eed4254741ac989bcf3f65c4774454d1f55b84e02a8",
       "extracted_path": "corpus/raw/C/C5-release-v1.27.1.json.txt",
       "extracted_sha256": "bd9cca5bfdd6faee553395a887c7f68abca1b2f967ada7268c5d5455b9710205",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Public upstream release notes; local reference copy.",
       "version": "1.27.1"
     },
@@ -376,7 +376,7 @@
       "source_sha256": "0e814e70a991e1b2fc9f3ff488a133ee87cc475218c76408c52ea793a892133b",
       "extracted_path": "corpus/raw/C/C7-omedit-mcp-readme.md.txt",
       "extracted_sha256": "0e814e70a991e1b2fc9f3ff488a133ee87cc475218c76408c52ea793a892133b",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned OpenModelica checkout; not a new redistribution license.",
       "commit": "4a7248c1ab64f4205eb4222b6b009bbf2b0df383"
     },
@@ -388,7 +388,7 @@
       "source_sha256": "1491abc954d225e1e9d2f802a5e39d4e884113b273131785f9dc656e8d9a1fd1",
       "extracted_path": "corpus/raw/C/C7-issue-15385.json.txt",
       "extracted_sha256": "87296ed97c7021c524f643090f11b2ce81353e927e7d1e3e9fa7c8ec42e0faf9",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Public issue; local reference. Point-in-time issue text, not release authority."
     },
     {
@@ -399,7 +399,7 @@
       "source_sha256": "95c1e8ff98fc651b13ed9b38e7f8fde3c623a9f639b843c35f49c8936967e288",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-architecture-index.mdx.txt",
       "extracted_sha256": "95c1e8ff98fc651b13ed9b38e7f8fde3c623a9f639b843c35f49c8936967e288",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -411,7 +411,7 @@
       "source_sha256": "8361d0dd9d7072d9d93cace82afe4d1d562d0a6e456f48f2bcf0ef3a922907c6",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-authorization.mdx.txt",
       "extracted_sha256": "8361d0dd9d7072d9d93cace82afe4d1d562d0a6e456f48f2bcf0ef3a922907c6",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -423,7 +423,7 @@
       "source_sha256": "bd275064995d6e36dbb51c059be97e81c3eb7ceafc932e0276a7fc0a84c30fa4",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-index.mdx.txt",
       "extracted_sha256": "bd275064995d6e36dbb51c059be97e81c3eb7ceafc932e0276a7fc0a84c30fa4",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -435,7 +435,7 @@
       "source_sha256": "45a6e8b7fb8c96e7b9ba1b0a3c727e8451c1e55bf56bb62f3ab63fddc365b919",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-lifecycle.mdx.txt",
       "extracted_sha256": "45a6e8b7fb8c96e7b9ba1b0a3c727e8451c1e55bf56bb62f3ab63fddc365b919",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -447,7 +447,7 @@
       "source_sha256": "a247fdbb3cc25c805ef43124db18d9b60a56669b3e65bd163dffb76f4129dfc0",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-transports.mdx.txt",
       "extracted_sha256": "a247fdbb3cc25c805ef43124db18d9b60a56669b3e65bd163dffb76f4129dfc0",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -459,7 +459,7 @@
       "source_sha256": "9bd2a4422cf22b003621b0da0b812cb7b85c00e2feee1e6847a9d2f4837343d4",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-cancellation.mdx.txt",
       "extracted_sha256": "9bd2a4422cf22b003621b0da0b812cb7b85c00e2feee1e6847a9d2f4837343d4",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -471,7 +471,7 @@
       "source_sha256": "f21b707244cd43bf4a562c2016eb91725db28c6f17eb3b279d1a8dffd415a463",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-ping.mdx.txt",
       "extracted_sha256": "f21b707244cd43bf4a562c2016eb91725db28c6f17eb3b279d1a8dffd415a463",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -483,7 +483,7 @@
       "source_sha256": "35d27ca9ad8ee9e029ab84afc751de208f7732c97c7a5d792abbcc237ab72528",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-progress.mdx.txt",
       "extracted_sha256": "35d27ca9ad8ee9e029ab84afc751de208f7732c97c7a5d792abbcc237ab72528",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -495,7 +495,7 @@
       "source_sha256": "bef1bef9f939e09eed8f1928da4d3b36924f4a43b72ffc47a5c1e673f1c1a23b",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-basic-utilities-tasks.mdx.txt",
       "extracted_sha256": "bef1bef9f939e09eed8f1928da4d3b36924f4a43b72ffc47a5c1e673f1c1a23b",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -507,7 +507,7 @@
       "source_sha256": "d21083d5ada5706026550ed13ec2ccfb0a8b3b271918698c33d18d2c41d942ae",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-changelog.mdx.txt",
       "extracted_sha256": "d21083d5ada5706026550ed13ec2ccfb0a8b3b271918698c33d18d2c41d942ae",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -519,7 +519,7 @@
       "source_sha256": "a60c4955e9fbacd5b21c856f7a8f1ccdaad91dc6c600347762482fd2750e6a3f",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-elicitation.mdx.txt",
       "extracted_sha256": "a60c4955e9fbacd5b21c856f7a8f1ccdaad91dc6c600347762482fd2750e6a3f",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -531,7 +531,7 @@
       "source_sha256": "5ac98aa829b9c719ed2600fd5cd0d764833054d97ce7221d1660ccbcf06a5478",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-roots.mdx.txt",
       "extracted_sha256": "5ac98aa829b9c719ed2600fd5cd0d764833054d97ce7221d1660ccbcf06a5478",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -543,7 +543,7 @@
       "source_sha256": "4983c3deda69d135e7e756f9e51d62fb1174b0ad6176eed5a40d0f12bfaf0d15",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-client-sampling.mdx.txt",
       "extracted_sha256": "4983c3deda69d135e7e756f9e51d62fb1174b0ad6176eed5a40d0f12bfaf0d15",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -555,7 +555,7 @@
       "source_sha256": "cbed0305607471945be08e0fcda8f8630d409dddf9181da972c00866a2a7703a",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-index.mdx.txt",
       "extracted_sha256": "cbed0305607471945be08e0fcda8f8630d409dddf9181da972c00866a2a7703a",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -567,7 +567,7 @@
       "source_sha256": "03c66be1ec2c04c7d62d4443f47f0b9ac6213656168a4316b169fc96aaf9ec15",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-schema.mdx.txt",
       "extracted_sha256": "03c66be1ec2c04c7d62d4443f47f0b9ac6213656168a4316b169fc96aaf9ec15",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -579,7 +579,7 @@
       "source_sha256": "7a5a4c6ec4f2ae9fac3145b9e7c5935d3507ec6b8288f0941b45408075deda6f",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-index.mdx.txt",
       "extracted_sha256": "7a5a4c6ec4f2ae9fac3145b9e7c5935d3507ec6b8288f0941b45408075deda6f",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -591,7 +591,7 @@
       "source_sha256": "5c4a5adefade5d9ecaa1446278a46d48c11fbfb4217bcd81c8fc004928a4abe1",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-prompts.mdx.txt",
       "extracted_sha256": "5c4a5adefade5d9ecaa1446278a46d48c11fbfb4217bcd81c8fc004928a4abe1",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -603,7 +603,7 @@
       "source_sha256": "9c1aa45ee31c1e0f097c5d1f6316e796f0ee2d393fbc960be400e0f77cf82843",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-resources.mdx.txt",
       "extracted_sha256": "9c1aa45ee31c1e0f097c5d1f6316e796f0ee2d393fbc960be400e0f77cf82843",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -615,7 +615,7 @@
       "source_sha256": "39e56ad4f3d1ff1cb28ee62283e02947cd97db8aa6190782d629f4562a0f354c",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-tools.mdx.txt",
       "extracted_sha256": "39e56ad4f3d1ff1cb28ee62283e02947cd97db8aa6190782d629f4562a0f354c",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -627,7 +627,7 @@
       "source_sha256": "ea42d006ba3b3ab8deceb5ae22be17f79e40b26a207947459560018f91eb42e9",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-completion.mdx.txt",
       "extracted_sha256": "ea42d006ba3b3ab8deceb5ae22be17f79e40b26a207947459560018f91eb42e9",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -639,7 +639,7 @@
       "source_sha256": "37cfde22e75d2444c9d796c2df636b96c1c9d486e64b109e38169f2d7f2cf82a",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-logging.mdx.txt",
       "extracted_sha256": "37cfde22e75d2444c9d796c2df636b96c1c9d486e64b109e38169f2d7f2cf82a",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -651,7 +651,7 @@
       "source_sha256": "81a715102e8da34afd1473ef457dedab233b2d8e4af00447ae1c27c2b854c14b",
       "extracted_path": "corpus/raw/C/C6-mcp-2025-11-25-server-utilities-pagination.mdx.txt",
       "extracted_sha256": "81a715102e8da34afd1473ef457dedab233b2d8e4af00447ae1c27c2b854c14b",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Upstream documentation/source, retained for local reference. See license notices in pinned modelcontextprotocol checkout; not a new redistribution license.",
       "commit": "24efd6e7cbd7a074e6b3b781eb370891df40afad"
     },
@@ -663,7 +663,7 @@
       "source_sha256": "7c285e74052181f99931e3464f8f3da0136fdd69384265fa7c693adef750323b",
       "extracted_path": "corpus/raw/C/C8-modex.html.txt",
       "extracted_sha256": "f5811ef71a4583d272e54c106e07e9ea8e83652fc26f7c977c51a6e5e4e02fd9",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Public website excerpt for local reference; rights unspecified. No claim of full documentation ingestion."
     },
     {
@@ -674,7 +674,7 @@
       "source_sha256": "ad1892d9ad169fe517be7bece7e981b4e6a0bbf5d04380974f80cd16c3c1dabb",
       "extracted_path": "corpus/raw/C/C2-compiler-diagnostics-adapter.txt.txt",
       "extracted_sha256": "ad1892d9ad169fe517be7bece7e981b4e6a0bbf5d04380974f80cd16c3c1dabb",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "rights_note": "Locally authored integration guidance; upstream API references are pinned separately in C2/C3.",
       "authored_adapter": true,
       "role": "compiler-diagnostics",
@@ -686,7 +686,7 @@
       "commit": "8ae3d35c24e519cb2996cab20f3b13daf2b0c50a",
       "raw_path": "corpus/raw/A/Modelica-reflection.json",
       "source_sha256": "ead9f6f68eea1e15af59ff9bdb9f0004664ab6eef05715c4fad1aaa4d00a9ba7",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "version": "4.1.0"
     },
     {
@@ -695,7 +695,7 @@
       "commit": "80343c524bb96a983374277732b84a19cf055052",
       "raw_path": "corpus/raw/A/PowerSystems-reflection.json",
       "source_sha256": "b20cbf27d5cb9bd5fafb0cbcc4c49251a8eca5fca5d7ce5d7af5f24cb3f58a49",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "version": "2.1.0"
     },
     {
@@ -704,7 +704,7 @@
       "commit": "e2b011ac7fd90f9cf5771f29f1aefa160550b6ee",
       "raw_path": "corpus/raw/A/ThermoPower-reflection.json",
       "source_sha256": "e81d35309a83015a8e7ba4e1540eb4caca6cef64df7188eeb5b654efb59a386c",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "version": "3.1"
     },
     {
@@ -713,7 +713,7 @@
       "commit": "7dcc6ddd6c8c6efe8bb7f25080d6e35293f87600",
       "raw_path": "corpus/raw/A/ElectroMechanicalDrives-reflection.json",
       "source_sha256": "5e5300b137a3f5bc03ffc236993021a843c95073b1cd2ce6dd63d74300223583",
-      "acquired_utc": "2026-09-21T06:30:05.310355+00:00",
+      "acquired_utc": "2026-09-21T20:48:41.426386+00:00",
       "version": "3.X.X"
     }
   ],
