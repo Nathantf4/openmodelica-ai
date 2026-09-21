@@ -40,29 +40,57 @@ Useful plot variables (the batch CSVs keep these visible signals):
 - `aimc.wMechanical`: rad/s, displayUnit rev/min; `aimc.tauElectrical`: N·m.
 - Fault model: `faultSwitch.i[1:3]`, `iSource[1:3]`, and `faultSwitch.control[1:3]`. Source currents are positive toward the line. Inspect 1.47–1.65 s to see the fault and clearing.
 
-From the extracted package root:
+## Running on your own computer
+
+### What you need
+
+| Software | Version used to build this package | Why |
+|---|---|---|
+| OpenModelica (OMEdit + `omc`) | **1.27.1** | Opens, checks and simulates the `.mo` files. Any 1.24 or newer should work; 1.27.1 is what was verified. Windows/macOS/Linux installers: https://openmodelica.org/download/ |
+| Modelica Standard Library (MSL) | **4.1.0** | The only library these models use. It ships **inside** OpenModelica ≥ 1.24; nothing separate to download. In OMEdit, File → System Libraries lists it; `Modelica` also auto-loads when you open a model that declares `uses(Modelica(version="4.1.0"))`, which these do. |
+| Python 3.10+ with `OMPython` 4.1.0 | optional | Only for `Scripts/check_and_simulate.py`. Not needed for OMEdit or the `.mos` batch script. |
+
+If OMEdit reports it cannot find `Modelica` 4.1.0: File → Manage Libraries → Install Library → pick `Modelica`, version `4.1.0`, then reopen the model. (Equivalent `omc` command: `installPackage(Modelica, "4.1.0", exactMatch=true)`.)
+
+Linux notes: on Ubuntu/Debian follow the apt instructions on the download page (they add the OpenModelica repository, then `apt install openmodelica`), which installs `omc`, `omedit` and the library cache together. `omc` also pulls in a C compiler (clang) and CMake automatically — simulation compiles generated C code, so a compiler must be present. On Windows the installer bundles everything.
+
+### Graphical (recommended)
+
+1. Extract the ZIP anywhere writable (e.g. `Documents/emt-base-machine/`). Do not put it under the OpenModelica installation folder; OMEdit treats those as read-only system libraries.
+2. OMEdit → File → Open Model/Library File(s) → `Models/EmtMachineBaseFault.mo` (or `EmtMachineBase.mo`).
+3. Double-click the model in the Libraries browser (top-left) to see the diagram. Simulate (green arrow or Simulation → Simulate). Expect one "initial conditions are over specified … 1 initial equation is redundant" notice — this is documented above and is not an error.
+4. Switch to Plotting and tick variables in the Variables browser (right side). Parameters you change in the Variables browser take effect with **Re-simulate**; parameters changed in the model's parameter dialog (Modeling view) take effect with **Simulate**.
+
+### Batch: compiler only (no Python)
+
+From a terminal, inside the extracted package root (the folder that contains `Models/`, `Scripts/`, `Fixtures/`, `Results/`):
 
 ```sh
 omc Scripts/check_and_simulate.mos
-# On the originating machine use omc-native for the native installation.
-# With OMPython installed:
-python3 Scripts/check_and_simulate.py
 ```
 
-Both batch scripts load, check and simulate the good models, clear their prior expected result files, print explicit PASS/FAIL lines, and try the deliberate `Fixtures/BrokenMissingClass.mo` typo. Good CSVs go to `Results/`. The `.mos` gates the returned result path, runtime completion, final time and nonfinite text; the Python script additionally checks every numeric cell, file freshness, and writes `Results/verification.json`. A missing-class diagnostic and no broken-fixture CSV earn EXPECTED_FAIL. Raw `omc` can exit **0 on errors**; never use shell status as the success criterion. The CSV header can contain quoted matrix names when saving all internal variables: use a CSV-aware parser. The take-home scripts select the named plot signals for manageable output and compatibility with OMC's CSV reader.
+`omc` must be on your PATH. Windows: `"C:\Program Files\OpenModelica1.27.1-64bit\bin\omc.exe" Scripts\check_and_simulate.mos` (adjust the path to your installation). The script prints `PASS:` / `FAIL:` / `EXPECTED_FAIL:` lines and writes CSVs into `Results/`. Expect about 10–20 s per model on a laptop.
 
-Inside the originating project, the harness makes and runs fresh writable copies automatically:
+### Batch: Python (optional)
 
 ```sh
-PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/emt_base.py
-PYTHONDONTWRITEBYTECODE=1 .venv/bin/pytest -p no:cacheprovider tests/test_emt_base.py -q
+python3 -m venv .venv               # Windows: py -3 -m venv .venv
+. .venv/bin/activate                # Windows: .venv\Scripts\activate
+pip install "OMPython==4.1.0"       # pulls numpy, psutil, pyparsing, pyzmq
+python Scripts/check_and_simulate.py
 ```
 
-For a manual isolated replay, change into a fresh copied package under `artifacts/emt-base/`, then run `/home/nathan/openmodelica-ai/bin/om python3 Scripts/check_and_simulate.py`. The examples tree is read-only inside `bin/om`.
+`OMPython` finds `omc` through the `OPENMODELICAHOME` environment variable (set by the Windows installer) or through `omc` on your PATH. On Linux, if it cannot find it: `export OPENMODELICAHOME=/usr` for an apt installation. The script uses `OMCSessionLocal`, which exists from OMPython 4.1.0 onward; older OMPython versions will fail with an import error.
 
-The host harness runs the existing `scripts/run_model.py` through `bin/om python3`, with 30000 intervals over 3 s, validated scalar overrides and actual runtime readback. Because that runner only accepts `artifacts/smoke` relative to its own workspace, the harness places a **byte-identical copy** of the runner and model in a fresh workspace under `artifacts/emt-base/runs/`. It does not modify or fork the runner. The checked runner uses its existing stricter tolerance 1e-8. Host verification adds independent complex-arithmetic equivalent-circuit calculations (not `powerBalance`), time-weighted phase RMS measurements over complete cycles, measured CSV switch edges, KCL, trajectory comparisons, native folder and ZIP replay, and OMPython script replay. Evidence, hashes, wall times, plots and per-run JSON are retained outside this ZIP in `artifacts/emt-base/`; see `VERIFICATION.md` and `FINAL_RESULT.md` there. ZIP Results/ is empty.
+### What the batch scripts check
 
-Version/provenance: built against OpenModelica 1.27.1 and runtime MSL **4.1.0+maint.om** (reports 4.1.0; maintained commit 8df0769a9cee6ad04ddfff95faee64cd70f662ec). The upstream v4.1.0 checkout is reference data and is not claimed bit-identical. Wiring, machine modifiers and initialization are adapted from MSL `Modelica.Electrical.Machines.Examples.InductionMachines.IMC_DOL`; nominal numbers are in the installed `IM_SquirrelCage` documentation table. MSL is installed separately, not bundled. The generating session's selected model was preserved; no model-ranking claim is made.
+Both scripts load, check and simulate the good models, delete any prior expected result files, print explicit `PASS`/`FAIL` lines, and try the deliberate `Fixtures/BrokenMissingClass.mo` typo. Good CSVs go to `Results/`. The `.mos` gates the returned result path, runtime completion, final time and nonfinite text; the Python script additionally checks every numeric cell, file freshness, and writes `Results/verification.json`. A missing-class diagnostic and no broken-fixture CSV earn `EXPECTED_FAIL`. Raw `omc` can exit **0 on errors**; never use shell status as the success criterion. The CSV header can contain quoted matrix names when saving all internal variables: use a CSV-aware parser. The take-home scripts select the named plot signals for manageable output and compatibility with OMC's CSV reader.
+
+### How this package was verified before sending
+
+Independent of the scripts above, the originating environment re-ran both models through a checked runner (30 000 intervals over 3 s, tolerance 1e-8, validated parameter overrides with runtime readback) and compared the results against a separate complex-arithmetic equivalent-circuit calculation (not the model's own power-balance record): time-weighted phase RMS over complete cycles, measured CSV switch edges, Kirchhoff current sums, trajectory comparisons, plus a fresh-folder replay, a ZIP-extraction replay and an OMPython replay. That evidence (hashes, wall times, plots, per-run JSON) is kept with the originating project, not in this ZIP. `Results/` ships empty on purpose; everything in it is regenerated on your machine.
+
+Version/provenance: built and verified against OpenModelica 1.27.1 with the MSL it ships (**4.1.0+maint.om**, which reports itself as 4.1.0). Wiring, machine modifiers and initialization are adapted from the MSL example `Modelica.Electrical.Machines.Examples.InductionMachines.IMC_DOL`; the nominal numbers quoted above come from the `IM_SquirrelCage` documentation table in that library. MSL is not bundled in this ZIP; your OpenModelica installation provides it.
 
 MSL attribution for the adapted example structure:
 
